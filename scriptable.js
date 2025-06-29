@@ -10,9 +10,9 @@ let now = new Date();
 
 // day change after sunset
 let sunsetHour = 18;
-if (now.getHours() >= sunsetHour) {
-  now.setDate(now.getDate() + 1);
-}
+// if (now.getHours() >= sunsetHour) {
+//  now.setDate(now.getDate() + 1);
+// }
 
 let todayISO = now.toISOString().slice(0,10);
 
