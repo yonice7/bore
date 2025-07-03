@@ -3,10 +3,10 @@ from datetime import date, timedelta
 
 # Configuration of the 4 months
 months = [
-    {"name": "Aviv", "start": date(2025, 3, 31), "days": 29, "bore_month": 1, "hebrew_month": "Nisan"},
+    {"name": "Aviv", "start": date(2025, 3, 31), "days": 29, "bore_month": 1, "hebrew_month": "Nisán"},
     {"name": "Ziv",  "start": date(2025, 4, 28), "days": 30, "bore_month": 2, "hebrew_month": "Iyyar"},
     {"name": "Sivan","start": date(2025, 5, 27), "days": 29, "bore_month": 3, "hebrew_month": "Sivan"},
-    {"name": "Tammuz","start": date(2025, 6, 27), "days": 30, "bore_month": 4, "hebrew_month": "Tammuz"}
+    {"name": "Tammuz","start": date(2025, 6, 27), "days": 30, "bore_month": 4, "hebrew_month": "Tamuz"}
 ]
 
 # First day of the Omer count
@@ -27,7 +27,21 @@ for month in months:
         current = start_date + timedelta(days=d)
         iso_date = current.isoformat()
         bore_day = d + 1
-        bore = f"{bore_day} {month['name']} 6025"
+        
+        # bore month name
+        if month["bore_month"] == 1:
+            bore_month_name = "Aviv"
+        elif month["bore_month"] == 2:
+            bore_month_name = "Ziv"
+        elif month["bore_month"] == 7:
+            bore_month_name = "Etanim"
+        elif month["bore_month"] == 8:
+            bore_month_name = "Bul"
+        else:
+            # para los no-bíblicos (en este caso 3 y 4)
+            bore_month_name = f"{month['bore_month']}° mes"
+
+        bore = f"{bore_day} {bore_month_name} 6025"
         hebrew = f"{bore_day} {month['hebrew_month']} 5785"
 
         note = ""
@@ -63,7 +77,7 @@ for month in months:
 
         # New month markers
         if bore_day == 1 and month["bore_month"] != 1:
-            note = f"Beginning of month {month['name']}"
+            note = f"Beginning of month {bore_month_name}"
             event = "New month"
 
         calendar[iso_date] = {
