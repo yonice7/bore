@@ -24,7 +24,11 @@ if (localNow.getHours() >= sunsetHour) {
   localNow.setDate(localNow.getDate() + 1);
 }
 
-let todayISO = localNow.toISOString().slice(0, 10);
+// construir la fecha manualmente (sin UTC)
+let yyyy = localNow.getFullYear();
+let mm = String(localNow.getMonth() + 1).padStart(2, "0");
+let dd = String(localNow.getDate()).padStart(2, "0");
+let todayISO = `${yyyy}-${mm}-${dd}`;
 
 console.log(`📌 Fecha final bore usada: ${todayISO}`);
 
