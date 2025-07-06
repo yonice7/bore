@@ -5,16 +5,28 @@ const jsonUrl = "https://raw.githubusercontent.com/yonice7/bore/main/6025.json";
 let req = new Request(jsonUrl);
 let jsonData = await req.loadJSON();
 
-// get today's date (Scriptable local timezone)
+// get today's date with local timezone, no UTC
 let now = new Date();
+let localNow = new Date(
+  now.getFullYear(),
+  now.getMonth(),
+  now.getDate(),
+  now.getHours(),
+  now.getMinutes(),
+  now.getSeconds()
+);
 
 // day change after sunset
 let sunsetHour = 18;
-// if (now.getHours() >= sunsetHour) {
-//  now.setDate(now.getDate() + 1);
-// }
 
-let todayISO = now.toISOString().slice(0,10);
+if (localNow.getHours() >= sunsetHour) {
+  console.log(`✅ Después de las ${sunsetHour}h, sumando +1 día`);
+  localNow.setDate(localNow.getDate() + 1);
+}
+
+let todayISO = localNow.toISOString().slice(0, 10);
+
+console.log(`📌 Fecha final bore usada: ${todayISO}`);
 
 // lookup
 let entry = jsonData[todayISO] || {
@@ -43,7 +55,7 @@ dayText.font = Font.boldSystemFont(48);
 dayText.textColor = Color.black();
 dayText.centerAlignText();
 
-// month and year (larger)
+// month and year
 let monthYearText = w.addText(`${boreMonth} ${boreYear}`);
 monthYearText.font = Font.systemFont(16);
 monthYearText.textColor = Color.gray();
@@ -52,7 +64,12 @@ monthYearText.centerAlignText();
 w.addSpacer(8);
 
 // gregorian date (larger light gray)
-let gregorian = now.toLocaleDateString("es-CO", { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+let gregorian = localNow.toLocaleDateString("es-CO", {
+  weekday: 'short',
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric'
+});
 let gregText = w.addText(`${gregorian}`);
 gregText.font = Font.systemFont(14);
 gregText.textColor = Color.lightGray();
