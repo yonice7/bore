@@ -45,8 +45,8 @@ let entry = jsonData[todayISO] || {
 // extract bore parts
 let boreParts = entry.bore.split(" ");
 let boreDay = boreParts[0] || "";
-let boreMonth = boreParts[1] || "";
-let boreYear = boreParts[2] || "";
+let boreYear = boreParts[boreParts.length - 1] || "";
+let boreMonth = boreParts.slice(1, boreParts.length - 1).join(" ");
 
 // build widget
 let w = new ListWidget();
