@@ -1,108 +1,132 @@
-// CONFIG
+// CONFIG -------------------------------------------------------------
+// URL del JSON con llaves por fecha civil (yyyy-mm-dd)
 const jsonUrl = "https://raw.githubusercontent.com/yonice7/bore/main/6025.json";
 
-// get JSON from GitHub raw
-let req = new Request(jsonUrl);
-let jsonData = await req.loadJSON();
+// Hora fija de “puesta del sol” (heurística). Si >= 18, cambia el día bíblico.
+const sunsetHour = 18;
 
-// get today's date with local timezone, no UTC
-let now = new Date();
-let localNow = new Date(
-  now.getFullYear(),
-  now.getMonth(),
-  now.getDate(),
-  now.getHours(),
-  now.getMinutes(),
-  now.getSeconds()
+// UI colors
+const BG_COLOR = "#fefefe";
+const ACCENT_RED = "#d9534f";
+
+// -------------------------------------------------------------------
+// Fetch JSON (raw GitHub)
+const req = new Request(jsonUrl);
+const jsonData = await req.loadJSON();
+
+// === Keep two timelines ============================================
+// civilNow: real local civil time (no sunset shift)
+// boreNow : “biblical day” time (shifted after sunset ONLY for lookup)
+const now = new Date();
+const civilNow = new Date(
+  now.getFullYear(), now.getMonth(), now.getDate(),
+  now.getHours(), now.getMinutes(), now.getSeconds()
 );
 
-// day change after sunset
-let sunsetHour = 18;
-
-if (localNow.getHours() >= sunsetHour) {
-  console.log(`✅ Después de las ${sunsetHour}h, sumando +1 día`);
-  localNow.setDate(localNow.getDate() + 1);
+const boreNow = new Date(civilNow);
+if (boreNow.getHours() >= sunsetHour) {
+  console.log(`✅ Después de las ${sunsetHour}h, sumando +1 día SOLO para el lookup bore`);
+  boreNow.setDate(boreNow.getDate() + 1);
 }
 
-// construir la fecha manualmente (sin UTC)
-let yyyy = localNow.getFullYear();
-let mm = String(localNow.getMonth() + 1).padStart(2, "0");
-let dd = String(localNow.getDate()).padStart(2, "0");
-let todayISO = `${yyyy}-${mm}-${dd}`;
+// === Helpers ========================================================
+function toISODate(d) {
+  // Local ISO date without UTC shifts
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
 
-console.log(`📌 Fecha final bore usada: ${todayISO}`);
+const civilISO = toISODate(civilNow); // for gregorian display
+const lookupISO = toISODate(boreNow); // for JSON lookup
 
-// lookup
-let entry = jsonData[todayISO] || {
-  bore: "Unknown",
-  hebrew: "Unknown",
-  note: "",
-  moon: "",
-  aviv: "",
-  event: ""
-};
+console.log(`📌 Fecha civil (gregoriano): ${civilISO}`);
+console.log(`📌 Fecha usada para lookup JSON (bore): ${lookupISO}`);
 
-// extract bore parts
-let boreParts = entry.bore.split(" ");
-let boreDay = boreParts[0] || "";
-let boreYear = boreParts[boreParts.length - 1] || "";
-let boreMonth = boreParts.slice(1, boreParts.length - 1).join(" ");
+// === Lookup JSON by bore “biblical day” key =========================
+let entry = jsonData[lookupISO];
 
-// build widget
-let w = new ListWidget();
+// Optional graceful fallback: if not found, fall back to civilISO
+if (!entry) {
+  console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
+  entry = jsonData[civilISO];
+}
+
+if (!entry) {
+  console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
+  entry = {
+    bore: "Unknown",
+    hebrew: "Unknown",
+    note: "",
+    moon: "",
+    aviv: "",
+    event: ""
+  };
+}
+
+// === Extract bore parts =============================================
+const boreParts = (entry.bore || "").split(" ");
+const boreDay   = boreParts[0] || "";
+const boreYear  = boreParts[boreParts.length - 1] || "";
+const boreMonth = boreParts.slice(1, boreParts.length - 1).join(" ");
+
+// === Build widget ===================================================
+const w = new ListWidget();
 w.setPadding(12, 12, 12, 12);
-w.backgroundColor = new Color("#fefefe");
+w.backgroundColor = new Color(BG_COLOR);
 
-// main bore day (big & bold)
-let dayText = w.addText(boreDay);
+// Main bore day (big & bold)
+const dayText = w.addText(boreDay);
 dayText.font = Font.boldSystemFont(48);
 dayText.textColor = Color.black();
 dayText.centerAlignText();
 
-// month and year
-let monthYearText = w.addText(`${boreMonth} ${boreYear}`);
+// Month and year (bore)
+const monthYearText = w.addText(`${boreMonth} ${boreYear}`);
 monthYearText.font = Font.systemFont(16);
 monthYearText.textColor = Color.gray();
 monthYearText.centerAlignText();
 
 w.addSpacer(8);
 
-// gregorian date (larger light gray)
-let gregorian = localNow.toLocaleDateString("es-CO", {
-  weekday: 'short',
-  day: 'numeric',
-  month: 'short',
-  year: 'numeric'
+// Gregorian date: ALWAYS from civilNow (no sunset shift)
+const gregorian = civilNow.toLocaleDateString("es-CO", {
+  weekday: "short",
+  day: "numeric",
+  month: "short",
+  year: "numeric"
 });
-let gregText = w.addText(`${gregorian}`);
+const gregText = w.addText(`${gregorian}`);
 gregText.font = Font.systemFont(14);
 gregText.textColor = Color.lightGray();
 gregText.centerAlignText();
 
-// hebrew date (larger light gray)
-let hebrewText = w.addText(`${entry.hebrew}`);
+// Hebrew date (from JSON entry)
+const hebrewText = w.addText(`${entry.hebrew}`);
 hebrewText.font = Font.systemFont(14);
 hebrewText.textColor = Color.lightGray();
 hebrewText.centerAlignText();
 
 w.addSpacer(4);
 
-// note or event
+// Note (optional)
 if (entry.note) {
-  let note = w.addText(entry.note);
+  const note = w.addText(entry.note);
   note.font = Font.systemFont(14);
   note.textColor = Color.darkGray();
   note.centerAlignText();
 }
 
+// Event (optional, highlighted)
 if (entry.event) {
-  let ev = w.addText(entry.event);
+  const ev = w.addText(entry.event);
   ev.font = Font.boldSystemFont(14);
-  ev.textColor = new Color("#d9534f"); // subtle red
+  ev.textColor = new Color(ACCENT_RED);
   ev.centerAlignText();
 }
 
-// finalize
+// === Finalize =======================================================
 if (config.runsInWidget) {
   Script.setWidget(w);
 } else {
