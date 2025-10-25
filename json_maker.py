@@ -10,6 +10,7 @@ months = [
     {"name": "Av","start": date(2025, 7, 27), "days": 29, "bore_month": 5, "hebrew_month": "Av"},
     {"name": "Elul","start": date(2025, 8, 24), "days": 30, "bore_month": 6, "hebrew_month": "Elul"},
     {"name": "Tishrei","start": date(2025, 9, 24), "days": 29, "bore_month": 7, "hebrew_month": "Tishrei"},
+    {"name": "Cheshvan","start": date(2025, 10, 24), "days": 30, "bore_month": 8, "hebrew_month": "Cheshvan"}
 ]
 
 # First day of the Omer count
