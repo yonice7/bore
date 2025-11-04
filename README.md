@@ -1,19 +1,20 @@
-# Biblical Hebrew Calendar
+# the bore calendar
 
-Python tool to generate a biblical Hebrew calendar based on new moon sightings in Israel. Create a mobile widget to display biblical dates on your device, with all days of the year including festivals, new moons, and special events, inspired by the works of Michael Rood, Adam Drissel, Deborah Gordon, and Mark Harris.
+Create a mobile widget to display biblical dates on your device, with all days of the year including festivals, new moons, and special events, inspired by the works of Michael Rood, Adam Drissel, Deborah Gordon, and Mark Harris.
 
-## References
+## data
 - [When Is The New Moon](https://whenisthenewmoon.com)
 - [El Cuerpo del Mesías](https://elcuerpodelmesias.com)
 - [Michael Rood](https://www.michaelrood.com)
 
-## Generate Calendar
+## generate the calendar in your machine
+*clone this repo into your machine or even faster --> just copy paste `scriptable.js` into your iOS app (I always try to keep this up-to-date since I use it myself*
 
 1. **Update dates** in `json_maker.py` based on current new moon sightings from [whenisthenewmoon.com](https://whenisthenewmoon.com)
 2. **Run**: `python json_maker.py`
 3. **Output**: Creates `6025.json` with biblical calendar data
 
-## iPhone Setup
+## iphone setup
 
 ### 1. Install Scriptable
 Download **Scriptable** from the App Store.
@@ -21,7 +22,7 @@ Download **Scriptable** from the App Store.
 ### 2. Add Script
 - Open Scriptable → Tap **+** → Create new script
 - Copy `scriptable.js` content → Paste into script
-- Name it "Biblical Calendar"
+- Name it the way you want, I just go by "bore"
 
 ### 3. Configure
 Update `jsonUrl` in the script to point to your JSON file location.
@@ -33,7 +34,8 @@ Update `jsonUrl` in the script to point to your JSON file location.
 ### 5. Done!
 Widget shows biblical date, Gregorian date, and special events.
 
-## Key Events
+## key events
+*always try as much as possible to observe them according to the Torah*
 
 ### Spring Festivals (Aviv)
 - **Aviv 1**: Rosh Hashanah (Biblical New Year)
@@ -64,3 +66,5 @@ Widget shows biblical date, Gregorian date, and special events.
 
 ## Disclaimer
 Based on visual new moon sightings.
+
+**shalom**
