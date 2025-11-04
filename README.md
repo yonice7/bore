@@ -1,164 +1,66 @@
-# Biblical Hebrew Calendar Generator
+# Biblical Hebrew Calendar
 
-A Python-based tool to generate a biblical Hebrew calendar (Bore calendar) based on new moon sightings in Israel. This calendar follows the Creator's calendar as observed by dedicated watchmen, inspired by the works of Michael Rood, Adam Drissel, Deborah Gordon and Mark Harris
+Python tool to generate a biblical Hebrew calendar based on new moon sightings in Israel. Create a mobile widget to display biblical dates on your device, with all days of the year including festivals, new moons, and special events, inspired by the works of Michael Rood, Adam Drissel, Deborah Gordon, and Mark Harris.
 
 ## References
+- [When Is The New Moon](https://whenisthenewmoon.com)
+- [El Cuerpo del Mesías](https://elcuerpodelmesias.com)
+- [Michael Rood](https://www.michaelrood.com)
 
-- [When Is The New Moon](https://whenisthenewmoon.com) - Primary source for new moon sighting reports from Israel
-- [El Cuerpo del Mesías](https://elcuerpodelmesias.com) - Spanish resource for biblical calendar information
-- Works by Michael Rood, Adam Drissel, and Deborah Gordon
+## Generate Calendar
 
-## Project Structure
+1. **Update dates** in `json_maker.py` based on current new moon sightings from [whenisthenewmoon.com](https://whenisthenewmoon.com)
+2. **Run**: `python json_maker.py`
+3. **Output**: Creates `6025.json` with biblical calendar data
 
-- `json_maker.py` - Python script that generates the calendar JSON file
-- `6025.json` - Generated calendar data for biblical year 6025 (Gregorian 2025)
-- `scriptable.js` - iOS Scriptable widget for displaying biblical dates
-- `LICENSE` - MIT License
+## iPhone Setup
 
-## How It Works
+### 1. Install Scriptable
+Download **Scriptable** from the App Store.
 
-The calendar is based on visual sightings of the new moon crescent in Israel. Unlike the modern Jewish calendar (which uses mathematical calculations), this follows the biblical commandment to observe the moon and determine festival dates accordingly.
+### 2. Add Script
+- Open Scriptable → Tap **+** → Create new script
+- Copy `scriptable.js` content → Paste into script
+- Name it "Biblical Calendar"
 
-### Key Principles
+### 3. Configure
+Update `jsonUrl` in the script to point to your JSON file location.
 
-- **New Moon Sighting**: Each month begins when the new moon crescent is first visible from Jerusalem
-- **Biblical Year**: Starts in Aviv (March/April) with the spring barley harvest
-- **Festival Dates**: Determined by counting from the new moon, not fixed Gregorian dates
-- **Witness Verification**: Requires multiple witnesses for validity
+### 4. Add Widget
+- Long-press home screen → **+** → **Scriptable**
+- Select your script → Choose Medium size → **Add Widget**
 
-## Generating the Calendar
+### 5. Done!
+Widget shows biblical date, Gregorian date, and special events.
 
-### Usage
-
-1. **Update Configuration**: Edit the dates in `json_maker.py` based on current year new moon sightings:
-
-```python
-# Configuration for the current year
-current_year = 2025      # Gregorian year
-bore_year = 6025         # Biblical year (Aviv to Aviv)
-yehudim_year = 5785      # Traditional Jewish year (Tishrei to Tishrei)
-
-# Update base_months with actual sighting dates
-base_months = [
-    {"name": "Aviv", "month": 3, "day": 31, "days": 29, "bore_month": 1, "yehudim_month": "Nisán"},
-    # ... update each month's start date based on sightings
-]
-```
-
-2. **Update Festival Dates**: Modify the first Omer day date (16th of Aviv/Nisan):
-
-```python
-first_omer_day = date(current_year, 4, 21)  # Adjust based on actual Aviv 16
-```
-
-3. **Run the Generator**:
-
-```bash
-python json_maker.py
-```
-
-This creates a JSON file (e.g., `6025.json`) with the complete biblical calendar.
-
-### JSON Structure
-
-Each date entry contains:
-
-```json
-{
-  "2025-03-31": {
-    "bore": "1 Aviv 6025",
-    "yehudim": "1 Nisán 5785",
-    "note": "Beginning of the Biblical year",
-    "moon": "visible",
-    "aviv": "confirmed",
-    "event": "Rosh Hashanah"
-  }
-}
-```
-
-## iOS Setup with Scriptable
-
-Scriptable is an iOS automation app that allows JavaScript-based widgets. Use the provided `scriptable.js` to display biblical dates on your iPhone.
-
-### Step-by-Step iPhone Setup
-
-#### 1. Install Scriptable App
-- Download **Scriptable** from the App Store
-- Open the app and grant necessary permissions
-
-#### 2. Add the Biblical Calendar Script
-- In Scriptable, tap the **+** button to create a new script
-- Copy the entire contents of `scriptable.js`
-- Paste it into the new script
-- Name it "Biblical Calendar" or similar
-
-#### 3. Configure the Script
-- **Update JSON URL**: If hosting the JSON elsewhere, modify `jsonUrl`:
-  ```javascript
-  const jsonUrl = "https://your-host.com/6025.json";
-  ```
-- **Adjust Sunset Time**: Modify `sunsetHour` if needed (default: 18:00):
-  ```javascript
-  const sunsetHour = 18; // Biblical day changes at sunset
-  ```
-
-#### 4. Add to Home Screen Widget
-- Long-press on your iPhone home screen
-- Tap the **+** button in the top-left corner
-- Scroll down and select **Scriptable**
-- Choose your script ("Biblical Calendar")
-- Select widget size (Medium recommended)
-- Tap **Add Widget**
-
-#### 5. Grant Permissions
-- The first time you run the widget, Scriptable may request network access
-- Allow access to load the JSON calendar data
-
-#### 6. Test the Widget
-- The widget should now display:
-  - Large biblical day number
-  - Biblical month and year
-  - Current Gregorian date
-  - Traditional Hebrew date
-  - Any special notes or events
-
-### Widget Features
-
-- **Real-time Updates**: Automatically shows the correct biblical day
-- **Sunset Logic**: Biblical day changes at sunset (configurable)
-- **Event Highlights**: Special biblical events appear in red
-- **Fallback Handling**: Gracefully handles missing data
-
-### Troubleshooting iOS Setup
-
-**Widget not updating:**
-- Force-refresh by tapping the widget
-- Check internet connection for JSON loading
-
-**Script errors:**
-- Verify JSON URL is accessible
-- Ensure JSON format matches expected structure
-
-**Date showing incorrectly:**
-- Confirm your timezone settings
-- Adjust `sunsetHour` if needed for your location
-
-## Biblical Calendar Events
-
-The calendar includes these key biblical events:
+## Key Events
 
 ### Spring Festivals (Aviv)
-- **Rosh Hashanah**: New Year (Aviv 1)
-- **Pesach**: Passover (Aviv 14)
-- **Hag Ha'Matzot**: Unleavened Bread (Aviv 15-21)
-- **Bikurim**: Firstfruits (Aviv 16, start of Omer count)
-- **Shavuot**: Pentecost (50 days after Firstfruits)
+- **Aviv 1**: Rosh Hashanah (Biblical New Year)
+- **Aviv 10**: Day of Preparation
+- **Aviv 14**: Pesach (Passover) - Evening begins
+- **Aviv 15**: Hag Ha'Matzot (Unleavened Bread) begins
+- **Aviv 16**: Bikurim (Firstfruits) & Omer count begins
+- **Aviv 21**: Last Day of Unleavened Bread
+- **Aviv +50**: Shavuot (Pentecost/Weeks)
 
-### Fall Festivals (Etanim/Tishrei)
-- **Yom Terua**: Feast of Trumpets (Etanim 1)
-- **Yom Ha'Kipurim**: Day of Atonement (Etanim 10)
-- **Sucot**: Tabernacles (Etanim 15-21)
+### Fall Festivals (Etanim)
+- **Etanim 1**: Yom Terua (Feast of Trumpets)
+- **Etanim 10**: Yom Ha'Kipurim (Day of Atonement)
+- **Etanim 15**: Sukkot (Tabernacles) begins
+- **Etanim 21**: Last Day of Tabernacles
+- **Etanim 22**: Shemini Atzeret (Eighth Day)
+
+### New Moon Days
+- **1st of every month**: New Moon (Rosh Chodesh) - Work prohibited
+- **30th of every month**: Last day of month
+
+### Omer Count
+- **Daily from Aviv 16 to Aviv +49**: Count of Omer (49 days)
+- **Aviv +50**: Shavuot (completion of 50 days)
+
+### Special Days
+- **Weekly**: Shabbat (Sabbath) - From Friday sunset to Saturday sunset
 
 ## Disclaimer
-
-This calendar is based on visual new moon sightings and represents one interpretation of biblical calendar principles. Always verify dates with multiple reliable sources and consult with qualified teachers.
+Based on visual new moon sightings.
