@@ -28,7 +28,7 @@ Download **Scriptable** from the App Store.
 Update `jsonUrl` in the script to point to your JSON file location.
 
 ### 4. Add Widget
-- Long-press home screen → **+** → **Scriptable**
+- Long-press home screen → Edit → Add widget → **Scriptable**
 - Select your script → Choose Medium size → **Add Widget**
 
 ### 5. Done!
