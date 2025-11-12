@@ -1,135 +1,220 @@
-// CONFIG -------------------------------------------------------------
-// URL del JSON con llaves por fecha civil (yyyy-mm-dd)
-const jsonUrl = "https://raw.githubusercontent.com/yonice7/bore/main/6025.json";
+// ============================================================================
+// CONFIGURATION
+// ============================================================================
+const CONFIG = {
+  jsonUrl: "https://raw.githubusercontent.com/yonice7/bore/main/6025.json",
+  sunsetHour: 18,
+  colors: {
+    background: "#fefefe",
+    accentRed: "#d9534f",
+    black: Color.black(),
+    gray: Color.gray(),
+    lightGray: Color.lightGray(),
+    darkGray: Color.darkGray()
+  },
+  fonts: {
+    day: Font.boldSystemFont(48),
+    monthYear: Font.systemFont(16),
+    body: Font.systemFont(14),
+    event: Font.boldSystemFont(14)
+  },
+  spacing: {
+    small: 4,
+    medium: 8
+  },
+  locale: "es-CO"
+};
 
-// Hora fija de “puesta del sol” (heurística). Si >= 18, cambia el día bíblico.
-const sunsetHour = 18;
+const DEFAULT_ENTRY = {
+  bore: "Unknown",
+  yehudim: "Unknown",
+  note: "",
+  moon: "",
+  aviv: "",
+  event: ""
+};
 
-// UI colors
-const BG_COLOR = "#fefefe";
-const ACCENT_RED = "#d9534f";
+// ============================================================================
+// DATA HELPERS
+// ============================================================================
 
-// -------------------------------------------------------------------
-// Fetch JSON (raw GitHub)
-const req = new Request(jsonUrl);
-const jsonData = await req.loadJSON();
-
-// === Keep two timelines ============================================
-// civilNow: real local civil time (no sunset shift)
-// boreNow : “biblical day” time (shifted after sunset ONLY for lookup)
-const now = new Date();
-const civilNow = new Date(
-  now.getFullYear(), now.getMonth(), now.getDate(),
-  now.getHours(), now.getMinutes(), now.getSeconds()
-);
-
-const boreNow = new Date(civilNow);
-if (boreNow.getHours() >= sunsetHour) {
-  console.log(`✅ Después de las ${sunsetHour}h, sumando +1 día SOLO para el lookup bore`);
-  boreNow.setDate(boreNow.getDate() + 1);
-}
-
-// === Helpers ========================================================
-function toISODate(d) {
-  // Local ISO date without UTC shifts
-  const yyyy = d.getFullYear();
-  const mm = String(d.getMonth() + 1).padStart(2, "0");
-  const dd = String(d.getDate()).padStart(2, "0");
+/**
+ * Converts a Date object to ISO date string (yyyy-mm-dd) without UTC shifts
+ */
+function toISODate(date) {
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const dd = String(date.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
 }
 
-const civilISO = toISODate(civilNow); // for gregorian display
-const lookupISO = toISODate(boreNow); // for JSON lookup
-
-console.log(`📌 Fecha civil (gregoriano): ${civilISO}`);
-console.log(`📌 Fecha usada para lookup JSON (bore): ${lookupISO}`);
-
-// === Lookup JSON by bore “biblical day” key =========================
-let entry = jsonData[lookupISO];
-
-// Optional graceful fallback: if not found, fall back to civilISO
-if (!entry) {
-  console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
-  entry = jsonData[civilISO];
+/**
+ * Calculates the biblical day date (shifted after sunset)
+ */
+function getBiblicalDate(civilDate, sunsetHour) {
+  const biblicalDate = new Date(civilDate);
+  if (biblicalDate.getHours() >= sunsetHour) {
+    console.log(`✅ Después de las ${sunsetHour}h, sumando +1 día SOLO para el lookup bore`);
+    biblicalDate.setDate(biblicalDate.getDate() + 1);
+  }
+  return biblicalDate;
 }
 
-if (!entry) {
-  console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
-  entry = {
-    bore: "Unknown",
-    hebrew: "Unknown",
-    note: "",
-    moon: "",
-    aviv: "",
-    event: ""
+/**
+ * Parses bore date string into day, month, and year components
+ */
+function parseBoreDate(boreString) {
+  const parts = (boreString || "").split(" ");
+  return {
+    day: parts[0] || "",
+    month: parts.slice(1, parts.length - 1).join(" "),
+    year: parts[parts.length - 1] || ""
   };
 }
 
-// === Extract bore parts =============================================
-const boreParts = (entry.bore || "").split(" ");
-const boreDay   = boreParts[0] || "";
-const boreYear  = boreParts[boreParts.length - 1] || "";
-const boreMonth = boreParts.slice(1, boreParts.length - 1).join(" ");
-
-// === Build widget ===================================================
-const w = new ListWidget();
-w.setPadding(12, 12, 12, 12);
-w.backgroundColor = new Color(BG_COLOR);
-
-// Main bore day (big & bold)
-const dayText = w.addText(boreDay);
-dayText.font = Font.boldSystemFont(48);
-dayText.textColor = Color.black();
-dayText.centerAlignText();
-
-// Month and year (bore)
-const monthYearText = w.addText(`${boreMonth} ${boreYear}`);
-monthYearText.font = Font.systemFont(16);
-monthYearText.textColor = Color.gray();
-monthYearText.centerAlignText();
-
-w.addSpacer(8);
-
-// Gregorian date: ALWAYS from civilNow (no sunset shift)
-const gregorian = civilNow.toLocaleDateString("es-CO", {
-  weekday: "short",
-  day: "numeric",
-  month: "short",
-  year: "numeric"
-});
-const gregText = w.addText(`${gregorian}`);
-gregText.font = Font.systemFont(14);
-gregText.textColor = Color.lightGray();
-gregText.centerAlignText();
-
-// Hebrew date (from JSON entry)
-const hebrewText = w.addText(`${entry.hebrew}`);
-hebrewText.font = Font.systemFont(14);
-hebrewText.textColor = Color.lightGray();
-hebrewText.centerAlignText();
-
-w.addSpacer(4);
-
-// Note (optional)
-if (entry.note) {
-  const note = w.addText(entry.note);
-  note.font = Font.systemFont(14);
-  note.textColor = Color.darkGray();
-  note.centerAlignText();
+/**
+ * Fetches calendar data from JSON and finds entry for current date
+ */
+async function getCalendarEntry(jsonUrl, lookupISO, fallbackISO) {
+  const req = new Request(jsonUrl);
+  const jsonData = await req.loadJSON();
+  
+  let entry = jsonData[lookupISO];
+  
+  if (!entry) {
+    console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
+    entry = jsonData[fallbackISO];
+  }
+  
+  if (!entry) {
+    console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
+    entry = DEFAULT_ENTRY;
+  }
+  
+  return entry;
 }
 
-// Event (optional, highlighted)
-if (entry.event) {
-  const ev = w.addText(entry.event);
-  ev.font = Font.boldSystemFont(14);
-  ev.textColor = new Color(ACCENT_RED);
-  ev.centerAlignText();
+// ============================================================================
+// UI HELPERS
+// ============================================================================
+
+/**
+ * Creates a styled text element in the widget
+ */
+function addStyledText(widget, text, options = {}) {
+  const {
+    font = CONFIG.fonts.body,
+    color = CONFIG.colors.lightGray,
+    align = "center"
+  } = options;
+  
+  const textElement = widget.addText(text);
+  textElement.font = font;
+  textElement.textColor = color;
+  
+  if (align === "center") {
+    textElement.centerAlignText();
+  }
+  
+  return textElement;
 }
 
-// === Finalize =======================================================
-if (config.runsInWidget) {
-  Script.setWidget(w);
-} else {
-  w.presentMedium();
+/**
+ * Creates the main widget UI
+ */
+function buildWidget(entry, civilDate) {
+  const widget = new ListWidget();
+  widget.setPadding(12, 12, 12, 12);
+  widget.backgroundColor = new Color(CONFIG.colors.background);
+  
+  // Parse bore date
+  const boreDate = parseBoreDate(entry.bore);
+  
+  // Main day (big & bold)
+  addStyledText(widget, boreDate.day, {
+    font: CONFIG.fonts.day,
+    color: CONFIG.colors.black
+  });
+  
+  // Month and year
+  addStyledText(widget, `${boreDate.month} ${boreDate.year}`, {
+    font: CONFIG.fonts.monthYear,
+    color: CONFIG.colors.gray
+  });
+  
+  widget.addSpacer(CONFIG.spacing.medium);
+  
+  // Gregorian date
+  const gregorian = civilDate.toLocaleDateString(CONFIG.locale, {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    year: "numeric"
+  });
+  addStyledText(widget, gregorian);
+  
+  // Hebrew date (yehudim) - Rabbinic calendar
+  if (entry.yehudim) {
+    addStyledText(widget, entry.yehudim);
+  }
+  
+  widget.addSpacer(CONFIG.spacing.small);
+  
+  // Optional note
+  if (entry.note) {
+    addStyledText(widget, entry.note, {
+      color: CONFIG.colors.darkGray
+    });
+  }
+  
+  // Optional event (highlighted)
+  if (entry.event) {
+    addStyledText(widget, entry.event, {
+      font: CONFIG.fonts.event,
+      color: new Color(CONFIG.colors.accentRed)
+    });
+  }
+  
+  return widget;
 }
-Script.complete();
+
+// ============================================================================
+// MAIN EXECUTION
+// ============================================================================
+
+async function main() {
+  // Calculate dates
+  const now = new Date();
+  const civilNow = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate(),
+    now.getHours(),
+    now.getMinutes(),
+    now.getSeconds()
+  );
+  
+  const boreNow = getBiblicalDate(civilNow, CONFIG.sunsetHour);
+  const civilISO = toISODate(civilNow);
+  const lookupISO = toISODate(boreNow);
+  
+  console.log(`📌 Fecha civil (gregoriano): ${civilISO}`);
+  console.log(`📌 Fecha usada para lookup JSON (bore): ${lookupISO}`);
+  
+  // Fetch calendar entry
+  const entry = await getCalendarEntry(CONFIG.jsonUrl, lookupISO, civilISO);
+  
+  // Build and display widget
+  const widget = buildWidget(entry, civilNow);
+  
+  if (config.runsInWidget) {
+    Script.setWidget(widget);
+  } else {
+    widget.presentMedium();
+  }
+  
+  Script.complete();
+}
+
+// Run main function
+main();
