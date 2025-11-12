@@ -8,7 +8,7 @@ Create a mobile widget to display biblical dates on your device, with all days o
 - [Michael Rood](https://www.michaelrood.com)
 
 ## generate the calendar in your machine
-*clone this repo into your machine or even faster --> just copy paste `scriptable.js` into your iOS app (I always try to keep this up-to-date since I use it myself*
+*clone this repo into your machine or even faster --> just copy paste `scriptable.js` into your scriptable iOS app (I always try to keep this up-to-date since I use it myself*
 
 1. **Update dates** in `json_maker.py` based on current new moon sightings from [whenisthenewmoon.com](https://whenisthenewmoon.com)
 2. **Run**: `python json_maker.py`
