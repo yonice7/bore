@@ -23,7 +23,8 @@ base_months = [
     {"name": "5th month","month": 7, "day": 27, "days": 29, "bore_month": 5, "yehudim_month": "Av"},
     {"name": "6th month","month": 8, "day": 24, "days": 30, "bore_month": 6, "yehudim_month": "Elul"},
     {"name": "Etanim","month": 9, "day": 24, "days": 29, "bore_month": 7, "yehudim_month": "Tishrei"},
-    {"name": "Bul","month": 10, "day": 24, "days": 30, "bore_month": 8, "yehudim_month": "Cheshvan"}
+    {"name": "Bul","month": 10, "day": 24, "days": 29, "bore_month": 8, "yehudim_month": "Cheshvan"},
+    {"name": "9th month","month": 11, "day": 21, "days": 29, "bore_month": 9, "yehudim_month": "Kislev"}
 ]
 
 # Generate months with actual dates

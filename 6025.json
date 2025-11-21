@@ -1848,16 +1848,232 @@
     "event": ""
   },
   "2025-11-21": {
-    "bore": "29 Bul 6025",
-    "yehudim": "29 Cheshvan 5785",
+    "bore": "1 9th month 6025",
+    "yehudim": "1 Kislev 5785",
+    "note": "Beginning of month 9th month",
+    "moon": "visible",
+    "aviv": "",
+    "event": "New month"
+  },
+  "2025-11-22": {
+    "bore": "2 9th month 6025",
+    "yehudim": "2 Kislev 5785",
     "note": "",
     "moon": "",
     "aviv": "",
     "event": ""
   },
-  "2025-11-22": {
-    "bore": "30 Bul 6025",
-    "yehudim": "30 Cheshvan 5785",
+  "2025-11-23": {
+    "bore": "3 9th month 6025",
+    "yehudim": "3 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-24": {
+    "bore": "4 9th month 6025",
+    "yehudim": "4 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-25": {
+    "bore": "5 9th month 6025",
+    "yehudim": "5 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-26": {
+    "bore": "6 9th month 6025",
+    "yehudim": "6 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-27": {
+    "bore": "7 9th month 6025",
+    "yehudim": "7 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-28": {
+    "bore": "8 9th month 6025",
+    "yehudim": "8 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-29": {
+    "bore": "9 9th month 6025",
+    "yehudim": "9 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-11-30": {
+    "bore": "10 9th month 6025",
+    "yehudim": "10 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-01": {
+    "bore": "11 9th month 6025",
+    "yehudim": "11 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-02": {
+    "bore": "12 9th month 6025",
+    "yehudim": "12 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-03": {
+    "bore": "13 9th month 6025",
+    "yehudim": "13 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-04": {
+    "bore": "14 9th month 6025",
+    "yehudim": "14 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-05": {
+    "bore": "15 9th month 6025",
+    "yehudim": "15 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-06": {
+    "bore": "16 9th month 6025",
+    "yehudim": "16 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-07": {
+    "bore": "17 9th month 6025",
+    "yehudim": "17 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-08": {
+    "bore": "18 9th month 6025",
+    "yehudim": "18 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-09": {
+    "bore": "19 9th month 6025",
+    "yehudim": "19 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-10": {
+    "bore": "20 9th month 6025",
+    "yehudim": "20 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-11": {
+    "bore": "21 9th month 6025",
+    "yehudim": "21 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-12": {
+    "bore": "22 9th month 6025",
+    "yehudim": "22 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-13": {
+    "bore": "23 9th month 6025",
+    "yehudim": "23 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-14": {
+    "bore": "24 9th month 6025",
+    "yehudim": "24 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-15": {
+    "bore": "25 9th month 6025",
+    "yehudim": "25 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-16": {
+    "bore": "26 9th month 6025",
+    "yehudim": "26 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-17": {
+    "bore": "27 9th month 6025",
+    "yehudim": "27 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-18": {
+    "bore": "28 9th month 6025",
+    "yehudim": "28 Kislev 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-12-19": {
+    "bore": "29 9th month 6025",
+    "yehudim": "29 Kislev 5785",
     "note": "",
     "moon": "",
     "aviv": "",
