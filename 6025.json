@@ -1,5 +1,5 @@
 {
-  "2025-03-31": {
+  "2025-04-01": {
     "bore": "1 Aviv 6025",
     "yehudim": "1 Nisán 5785",
     "note": "Beginning of the Biblical year",
@@ -7,7 +7,7 @@
     "aviv": "confirmed",
     "event": "Rosh Hashanah"
   },
-  "2025-04-01": {
+  "2025-04-02": {
     "bore": "2 Aviv 6025",
     "yehudim": "2 Nisán 5785",
     "note": "",
@@ -15,7 +15,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-02": {
+  "2025-04-03": {
     "bore": "3 Aviv 6025",
     "yehudim": "3 Nisán 5785",
     "note": "",
@@ -23,7 +23,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-03": {
+  "2025-04-04": {
     "bore": "4 Aviv 6025",
     "yehudim": "4 Nisán 5785",
     "note": "",
@@ -31,7 +31,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-04": {
+  "2025-04-05": {
     "bore": "5 Aviv 6025",
     "yehudim": "5 Nisán 5785",
     "note": "",
@@ -39,7 +39,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-05": {
+  "2025-04-06": {
     "bore": "6 Aviv 6025",
     "yehudim": "6 Nisán 5785",
     "note": "",
@@ -47,7 +47,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-06": {
+  "2025-04-07": {
     "bore": "7 Aviv 6025",
     "yehudim": "7 Nisán 5785",
     "note": "",
@@ -55,7 +55,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-07": {
+  "2025-04-08": {
     "bore": "8 Aviv 6025",
     "yehudim": "8 Nisán 5785",
     "note": "",
@@ -63,7 +63,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-08": {
+  "2025-04-09": {
     "bore": "9 Aviv 6025",
     "yehudim": "9 Nisán 5785",
     "note": "",
@@ -71,7 +71,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-09": {
+  "2025-04-10": {
     "bore": "10 Aviv 6025",
     "yehudim": "10 Nisán 5785",
     "note": "",
@@ -79,7 +79,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-10": {
+  "2025-04-11": {
     "bore": "11 Aviv 6025",
     "yehudim": "11 Nisán 5785",
     "note": "",
@@ -87,7 +87,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-11": {
+  "2025-04-12": {
     "bore": "12 Aviv 6025",
     "yehudim": "12 Nisán 5785",
     "note": "",
@@ -95,7 +95,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-12": {
+  "2025-04-13": {
     "bore": "13 Aviv 6025",
     "yehudim": "13 Nisán 5785",
     "note": "",
@@ -103,7 +103,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-13": {
+  "2025-04-14": {
     "bore": "14 Aviv 6025",
     "yehudim": "14 Nisán 5785",
     "note": "Pesach begins at sunset",
@@ -111,7 +111,7 @@
     "aviv": "",
     "event": "Pesach"
   },
-  "2025-04-14": {
+  "2025-04-15": {
     "bore": "15 Aviv 6025",
     "yehudim": "15 Nisán 5785",
     "note": "Start of Hag Ha'Matzot",
@@ -119,7 +119,7 @@
     "aviv": "",
     "event": "Hag Ha'Matzot"
   },
-  "2025-04-15": {
+  "2025-04-16": {
     "bore": "16 Aviv 6025",
     "yehudim": "16 Nisán 5785",
     "note": "",
@@ -127,7 +127,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-16": {
+  "2025-04-17": {
     "bore": "17 Aviv 6025",
     "yehudim": "17 Nisán 5785",
     "note": "",
@@ -135,7 +135,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-17": {
+  "2025-04-18": {
     "bore": "18 Aviv 6025",
     "yehudim": "18 Nisán 5785",
     "note": "",
@@ -143,7 +143,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-18": {
+  "2025-04-19": {
     "bore": "19 Aviv 6025",
     "yehudim": "19 Nisán 5785",
     "note": "",
@@ -151,7 +151,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-19": {
+  "2025-04-20": {
     "bore": "20 Aviv 6025",
     "yehudim": "20 Nisán 5785",
     "note": "",
@@ -159,415 +159,415 @@
     "aviv": "",
     "event": ""
   },
-  "2025-04-20": {
+  "2025-04-21": {
     "bore": "21 Aviv 6025",
     "yehudim": "21 Nisán 5785",
-    "note": "Bikurim (Firstfruits) and first day of the Omer",
-    "moon": "",
-    "aviv": "",
-    "event": "Bikurim and Omer"
-  },
-  "2025-04-21": {
-    "bore": "22 Aviv 6025",
-    "yehudim": "22 Nisán 5785",
-    "note": "Omer day 1",
+    "note": "Bikurim (Firstfruits) and first day of the Omer | Omer day 1",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-22": {
-    "bore": "23 Aviv 6025",
-    "yehudim": "23 Nisán 5785",
+    "bore": "22 Aviv 6025",
+    "yehudim": "22 Nisán 5785",
     "note": "Omer day 2",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-23": {
-    "bore": "24 Aviv 6025",
-    "yehudim": "24 Nisán 5785",
+    "bore": "23 Aviv 6025",
+    "yehudim": "23 Nisán 5785",
     "note": "Omer day 3",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-24": {
-    "bore": "25 Aviv 6025",
-    "yehudim": "25 Nisán 5785",
+    "bore": "24 Aviv 6025",
+    "yehudim": "24 Nisán 5785",
     "note": "Omer day 4",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-25": {
-    "bore": "26 Aviv 6025",
-    "yehudim": "26 Nisán 5785",
+    "bore": "25 Aviv 6025",
+    "yehudim": "25 Nisán 5785",
     "note": "Omer day 5",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-26": {
-    "bore": "27 Aviv 6025",
-    "yehudim": "27 Nisán 5785",
+    "bore": "26 Aviv 6025",
+    "yehudim": "26 Nisán 5785",
     "note": "Omer day 6",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-27": {
-    "bore": "28 Aviv 6025",
-    "yehudim": "28 Nisán 5785",
+    "bore": "27 Aviv 6025",
+    "yehudim": "27 Nisán 5785",
     "note": "Omer day 7",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-04-28": {
-    "bore": "1 Ziv 6025",
-    "yehudim": "1 Iyyar 5785",
+    "bore": "28 Aviv 6025",
+    "yehudim": "28 Nisán 5785",
     "note": "Omer day 8",
-    "moon": "visible",
-    "aviv": "",
-    "event": "Omer"
-  },
-  "2025-04-29": {
-    "bore": "2 Ziv 6025",
-    "yehudim": "2 Iyyar 5785",
-    "note": "Omer day 9",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
+  "2025-04-29": {
+    "bore": "1 Ziv 6025",
+    "yehudim": "1 Iyyar 5785",
+    "note": "Omer day 9",
+    "moon": "visible",
+    "aviv": "",
+    "event": "Omer"
+  },
   "2025-04-30": {
-    "bore": "3 Ziv 6025",
-    "yehudim": "3 Iyyar 5785",
+    "bore": "2 Ziv 6025",
+    "yehudim": "2 Iyyar 5785",
     "note": "Omer day 10",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-01": {
-    "bore": "4 Ziv 6025",
-    "yehudim": "4 Iyyar 5785",
+    "bore": "3 Ziv 6025",
+    "yehudim": "3 Iyyar 5785",
     "note": "Omer day 11",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-02": {
-    "bore": "5 Ziv 6025",
-    "yehudim": "5 Iyyar 5785",
+    "bore": "4 Ziv 6025",
+    "yehudim": "4 Iyyar 5785",
     "note": "Omer day 12",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-03": {
-    "bore": "6 Ziv 6025",
-    "yehudim": "6 Iyyar 5785",
+    "bore": "5 Ziv 6025",
+    "yehudim": "5 Iyyar 5785",
     "note": "Omer day 13",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-04": {
-    "bore": "7 Ziv 6025",
-    "yehudim": "7 Iyyar 5785",
+    "bore": "6 Ziv 6025",
+    "yehudim": "6 Iyyar 5785",
     "note": "Omer day 14",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-05": {
-    "bore": "8 Ziv 6025",
-    "yehudim": "8 Iyyar 5785",
+    "bore": "7 Ziv 6025",
+    "yehudim": "7 Iyyar 5785",
     "note": "Omer day 15",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-06": {
-    "bore": "9 Ziv 6025",
-    "yehudim": "9 Iyyar 5785",
+    "bore": "8 Ziv 6025",
+    "yehudim": "8 Iyyar 5785",
     "note": "Omer day 16",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-07": {
-    "bore": "10 Ziv 6025",
-    "yehudim": "10 Iyyar 5785",
+    "bore": "9 Ziv 6025",
+    "yehudim": "9 Iyyar 5785",
     "note": "Omer day 17",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-08": {
-    "bore": "11 Ziv 6025",
-    "yehudim": "11 Iyyar 5785",
+    "bore": "10 Ziv 6025",
+    "yehudim": "10 Iyyar 5785",
     "note": "Omer day 18",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-09": {
-    "bore": "12 Ziv 6025",
-    "yehudim": "12 Iyyar 5785",
+    "bore": "11 Ziv 6025",
+    "yehudim": "11 Iyyar 5785",
     "note": "Omer day 19",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-10": {
-    "bore": "13 Ziv 6025",
-    "yehudim": "13 Iyyar 5785",
+    "bore": "12 Ziv 6025",
+    "yehudim": "12 Iyyar 5785",
     "note": "Omer day 20",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-11": {
-    "bore": "14 Ziv 6025",
-    "yehudim": "14 Iyyar 5785",
+    "bore": "13 Ziv 6025",
+    "yehudim": "13 Iyyar 5785",
     "note": "Omer day 21",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-12": {
-    "bore": "15 Ziv 6025",
-    "yehudim": "15 Iyyar 5785",
+    "bore": "14 Ziv 6025",
+    "yehudim": "14 Iyyar 5785",
     "note": "Omer day 22",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-13": {
-    "bore": "16 Ziv 6025",
-    "yehudim": "16 Iyyar 5785",
+    "bore": "15 Ziv 6025",
+    "yehudim": "15 Iyyar 5785",
     "note": "Omer day 23",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-14": {
-    "bore": "17 Ziv 6025",
-    "yehudim": "17 Iyyar 5785",
+    "bore": "16 Ziv 6025",
+    "yehudim": "16 Iyyar 5785",
     "note": "Omer day 24",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-15": {
-    "bore": "18 Ziv 6025",
-    "yehudim": "18 Iyyar 5785",
+    "bore": "17 Ziv 6025",
+    "yehudim": "17 Iyyar 5785",
     "note": "Omer day 25",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-16": {
-    "bore": "19 Ziv 6025",
-    "yehudim": "19 Iyyar 5785",
+    "bore": "18 Ziv 6025",
+    "yehudim": "18 Iyyar 5785",
     "note": "Omer day 26",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-17": {
-    "bore": "20 Ziv 6025",
-    "yehudim": "20 Iyyar 5785",
+    "bore": "19 Ziv 6025",
+    "yehudim": "19 Iyyar 5785",
     "note": "Omer day 27",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-18": {
-    "bore": "21 Ziv 6025",
-    "yehudim": "21 Iyyar 5785",
+    "bore": "20 Ziv 6025",
+    "yehudim": "20 Iyyar 5785",
     "note": "Omer day 28",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-19": {
-    "bore": "22 Ziv 6025",
-    "yehudim": "22 Iyyar 5785",
+    "bore": "21 Ziv 6025",
+    "yehudim": "21 Iyyar 5785",
     "note": "Omer day 29",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-20": {
-    "bore": "23 Ziv 6025",
-    "yehudim": "23 Iyyar 5785",
+    "bore": "22 Ziv 6025",
+    "yehudim": "22 Iyyar 5785",
     "note": "Omer day 30",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-21": {
-    "bore": "24 Ziv 6025",
-    "yehudim": "24 Iyyar 5785",
+    "bore": "23 Ziv 6025",
+    "yehudim": "23 Iyyar 5785",
     "note": "Omer day 31",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-22": {
-    "bore": "25 Ziv 6025",
-    "yehudim": "25 Iyyar 5785",
+    "bore": "24 Ziv 6025",
+    "yehudim": "24 Iyyar 5785",
     "note": "Omer day 32",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-23": {
-    "bore": "26 Ziv 6025",
-    "yehudim": "26 Iyyar 5785",
+    "bore": "25 Ziv 6025",
+    "yehudim": "25 Iyyar 5785",
     "note": "Omer day 33",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-24": {
-    "bore": "27 Ziv 6025",
-    "yehudim": "27 Iyyar 5785",
+    "bore": "26 Ziv 6025",
+    "yehudim": "26 Iyyar 5785",
     "note": "Omer day 34",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-25": {
-    "bore": "28 Ziv 6025",
-    "yehudim": "28 Iyyar 5785",
+    "bore": "27 Ziv 6025",
+    "yehudim": "27 Iyyar 5785",
     "note": "Omer day 35",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-26": {
-    "bore": "29 Ziv 6025",
-    "yehudim": "29 Iyyar 5785",
+    "bore": "28 Ziv 6025",
+    "yehudim": "28 Iyyar 5785",
     "note": "Omer day 36",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-27": {
-    "bore": "1 3rd month 6025",
-    "yehudim": "1 Sivan 5785",
+    "bore": "29 Ziv 6025",
+    "yehudim": "29 Iyyar 5785",
     "note": "Omer day 37",
-    "moon": "visible",
-    "aviv": "",
-    "event": "Omer"
-  },
-  "2025-05-28": {
-    "bore": "2 3rd month 6025",
-    "yehudim": "2 Sivan 5785",
-    "note": "Omer day 38",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
+  "2025-05-28": {
+    "bore": "1 3rd month 6025",
+    "yehudim": "1 Sivan 5785",
+    "note": "Omer day 38",
+    "moon": "visible",
+    "aviv": "",
+    "event": "Omer"
+  },
   "2025-05-29": {
-    "bore": "3 3rd month 6025",
-    "yehudim": "3 Sivan 5785",
+    "bore": "2 3rd month 6025",
+    "yehudim": "2 Sivan 5785",
     "note": "Omer day 39",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-30": {
-    "bore": "4 3rd month 6025",
-    "yehudim": "4 Sivan 5785",
+    "bore": "3 3rd month 6025",
+    "yehudim": "3 Sivan 5785",
     "note": "Omer day 40",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-05-31": {
-    "bore": "5 3rd month 6025",
-    "yehudim": "5 Sivan 5785",
+    "bore": "4 3rd month 6025",
+    "yehudim": "4 Sivan 5785",
     "note": "Omer day 41",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-01": {
-    "bore": "6 3rd month 6025",
-    "yehudim": "6 Sivan 5785",
+    "bore": "5 3rd month 6025",
+    "yehudim": "5 Sivan 5785",
     "note": "Omer day 42",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-02": {
-    "bore": "7 3rd month 6025",
-    "yehudim": "7 Sivan 5785",
+    "bore": "6 3rd month 6025",
+    "yehudim": "6 Sivan 5785",
     "note": "Omer day 43",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-03": {
-    "bore": "8 3rd month 6025",
-    "yehudim": "8 Sivan 5785",
+    "bore": "7 3rd month 6025",
+    "yehudim": "7 Sivan 5785",
     "note": "Omer day 44",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-04": {
-    "bore": "9 3rd month 6025",
-    "yehudim": "9 Sivan 5785",
+    "bore": "8 3rd month 6025",
+    "yehudim": "8 Sivan 5785",
     "note": "Omer day 45",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-05": {
-    "bore": "10 3rd month 6025",
-    "yehudim": "10 Sivan 5785",
+    "bore": "9 3rd month 6025",
+    "yehudim": "9 Sivan 5785",
     "note": "Omer day 46",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-06": {
-    "bore": "11 3rd month 6025",
-    "yehudim": "11 Sivan 5785",
+    "bore": "10 3rd month 6025",
+    "yehudim": "10 Sivan 5785",
     "note": "Omer day 47",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-07": {
-    "bore": "12 3rd month 6025",
-    "yehudim": "12 Sivan 5785",
+    "bore": "11 3rd month 6025",
+    "yehudim": "11 Sivan 5785",
     "note": "Omer day 48",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-08": {
-    "bore": "13 3rd month 6025",
-    "yehudim": "13 Sivan 5785",
+    "bore": "12 3rd month 6025",
+    "yehudim": "12 Sivan 5785",
     "note": "Omer day 49",
     "moon": "",
     "aviv": "",
     "event": "Omer"
   },
   "2025-06-09": {
-    "bore": "14 3rd month 6025",
-    "yehudim": "14 Sivan 5785",
+    "bore": "13 3rd month 6025",
+    "yehudim": "13 Sivan 5785",
     "note": "Omer day 50 | Shavuot",
     "moon": "",
     "aviv": "",
     "event": "Shavuot"
   },
   "2025-06-10": {
+    "bore": "14 3rd month 6025",
+    "yehudim": "14 Sivan 5785",
+    "note": "",
+    "moon": "",
+    "aviv": "",
+    "event": ""
+  },
+  "2025-06-11": {
     "bore": "15 3rd month 6025",
     "yehudim": "15 Sivan 5785",
     "note": "",
@@ -575,7 +575,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-11": {
+  "2025-06-12": {
     "bore": "16 3rd month 6025",
     "yehudim": "16 Sivan 5785",
     "note": "",
@@ -583,7 +583,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-12": {
+  "2025-06-13": {
     "bore": "17 3rd month 6025",
     "yehudim": "17 Sivan 5785",
     "note": "",
@@ -591,7 +591,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-13": {
+  "2025-06-14": {
     "bore": "18 3rd month 6025",
     "yehudim": "18 Sivan 5785",
     "note": "",
@@ -599,7 +599,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-14": {
+  "2025-06-15": {
     "bore": "19 3rd month 6025",
     "yehudim": "19 Sivan 5785",
     "note": "",
@@ -607,7 +607,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-15": {
+  "2025-06-16": {
     "bore": "20 3rd month 6025",
     "yehudim": "20 Sivan 5785",
     "note": "",
@@ -615,7 +615,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-16": {
+  "2025-06-17": {
     "bore": "21 3rd month 6025",
     "yehudim": "21 Sivan 5785",
     "note": "",
@@ -623,7 +623,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-17": {
+  "2025-06-18": {
     "bore": "22 3rd month 6025",
     "yehudim": "22 Sivan 5785",
     "note": "",
@@ -631,7 +631,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-18": {
+  "2025-06-19": {
     "bore": "23 3rd month 6025",
     "yehudim": "23 Sivan 5785",
     "note": "",
@@ -639,7 +639,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-19": {
+  "2025-06-20": {
     "bore": "24 3rd month 6025",
     "yehudim": "24 Sivan 5785",
     "note": "",
@@ -647,7 +647,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-20": {
+  "2025-06-21": {
     "bore": "25 3rd month 6025",
     "yehudim": "25 Sivan 5785",
     "note": "",
@@ -655,7 +655,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-21": {
+  "2025-06-22": {
     "bore": "26 3rd month 6025",
     "yehudim": "26 Sivan 5785",
     "note": "",
@@ -663,7 +663,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-22": {
+  "2025-06-23": {
     "bore": "27 3rd month 6025",
     "yehudim": "27 Sivan 5785",
     "note": "",
@@ -671,7 +671,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-23": {
+  "2025-06-24": {
     "bore": "28 3rd month 6025",
     "yehudim": "28 Sivan 5785",
     "note": "",
@@ -679,7 +679,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-24": {
+  "2025-06-25": {
     "bore": "29 3rd month 6025",
     "yehudim": "29 Sivan 5785",
     "note": "",
@@ -687,7 +687,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-27": {
+  "2025-06-28": {
     "bore": "1 4th month 6025",
     "yehudim": "1 Tamuz 5785",
     "note": "Beginning of month 4th month",
@@ -695,7 +695,7 @@
     "aviv": "",
     "event": "New month"
   },
-  "2025-06-28": {
+  "2025-06-29": {
     "bore": "2 4th month 6025",
     "yehudim": "2 Tamuz 5785",
     "note": "",
@@ -703,7 +703,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-29": {
+  "2025-06-30": {
     "bore": "3 4th month 6025",
     "yehudim": "3 Tamuz 5785",
     "note": "",
@@ -711,7 +711,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-06-30": {
+  "2025-07-01": {
     "bore": "4 4th month 6025",
     "yehudim": "4 Tamuz 5785",
     "note": "",
@@ -719,7 +719,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-01": {
+  "2025-07-02": {
     "bore": "5 4th month 6025",
     "yehudim": "5 Tamuz 5785",
     "note": "",
@@ -727,7 +727,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-02": {
+  "2025-07-03": {
     "bore": "6 4th month 6025",
     "yehudim": "6 Tamuz 5785",
     "note": "",
@@ -735,7 +735,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-03": {
+  "2025-07-04": {
     "bore": "7 4th month 6025",
     "yehudim": "7 Tamuz 5785",
     "note": "",
@@ -743,7 +743,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-04": {
+  "2025-07-05": {
     "bore": "8 4th month 6025",
     "yehudim": "8 Tamuz 5785",
     "note": "",
@@ -751,7 +751,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-05": {
+  "2025-07-06": {
     "bore": "9 4th month 6025",
     "yehudim": "9 Tamuz 5785",
     "note": "",
@@ -759,7 +759,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-06": {
+  "2025-07-07": {
     "bore": "10 4th month 6025",
     "yehudim": "10 Tamuz 5785",
     "note": "",
@@ -767,7 +767,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-07": {
+  "2025-07-08": {
     "bore": "11 4th month 6025",
     "yehudim": "11 Tamuz 5785",
     "note": "",
@@ -775,7 +775,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-08": {
+  "2025-07-09": {
     "bore": "12 4th month 6025",
     "yehudim": "12 Tamuz 5785",
     "note": "",
@@ -783,7 +783,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-09": {
+  "2025-07-10": {
     "bore": "13 4th month 6025",
     "yehudim": "13 Tamuz 5785",
     "note": "",
@@ -791,7 +791,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-10": {
+  "2025-07-11": {
     "bore": "14 4th month 6025",
     "yehudim": "14 Tamuz 5785",
     "note": "",
@@ -799,7 +799,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-11": {
+  "2025-07-12": {
     "bore": "15 4th month 6025",
     "yehudim": "15 Tamuz 5785",
     "note": "",
@@ -807,7 +807,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-12": {
+  "2025-07-13": {
     "bore": "16 4th month 6025",
     "yehudim": "16 Tamuz 5785",
     "note": "",
@@ -815,7 +815,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-13": {
+  "2025-07-14": {
     "bore": "17 4th month 6025",
     "yehudim": "17 Tamuz 5785",
     "note": "",
@@ -823,7 +823,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-14": {
+  "2025-07-15": {
     "bore": "18 4th month 6025",
     "yehudim": "18 Tamuz 5785",
     "note": "",
@@ -831,7 +831,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-15": {
+  "2025-07-16": {
     "bore": "19 4th month 6025",
     "yehudim": "19 Tamuz 5785",
     "note": "",
@@ -839,7 +839,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-16": {
+  "2025-07-17": {
     "bore": "20 4th month 6025",
     "yehudim": "20 Tamuz 5785",
     "note": "",
@@ -847,7 +847,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-17": {
+  "2025-07-18": {
     "bore": "21 4th month 6025",
     "yehudim": "21 Tamuz 5785",
     "note": "",
@@ -855,7 +855,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-18": {
+  "2025-07-19": {
     "bore": "22 4th month 6025",
     "yehudim": "22 Tamuz 5785",
     "note": "",
@@ -863,7 +863,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-19": {
+  "2025-07-20": {
     "bore": "23 4th month 6025",
     "yehudim": "23 Tamuz 5785",
     "note": "",
@@ -871,7 +871,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-20": {
+  "2025-07-21": {
     "bore": "24 4th month 6025",
     "yehudim": "24 Tamuz 5785",
     "note": "",
@@ -879,7 +879,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-21": {
+  "2025-07-22": {
     "bore": "25 4th month 6025",
     "yehudim": "25 Tamuz 5785",
     "note": "",
@@ -887,7 +887,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-22": {
+  "2025-07-23": {
     "bore": "26 4th month 6025",
     "yehudim": "26 Tamuz 5785",
     "note": "",
@@ -895,7 +895,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-23": {
+  "2025-07-24": {
     "bore": "27 4th month 6025",
     "yehudim": "27 Tamuz 5785",
     "note": "",
@@ -903,7 +903,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-24": {
+  "2025-07-25": {
     "bore": "28 4th month 6025",
     "yehudim": "28 Tamuz 5785",
     "note": "",
@@ -911,7 +911,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-25": {
+  "2025-07-26": {
     "bore": "29 4th month 6025",
     "yehudim": "29 Tamuz 5785",
     "note": "",
@@ -919,7 +919,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-26": {
+  "2025-07-27": {
     "bore": "30 4th month 6025",
     "yehudim": "30 Tamuz 5785",
     "note": "",
@@ -927,7 +927,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-27": {
+  "2025-07-28": {
     "bore": "1 5th month 6025",
     "yehudim": "1 Av 5785",
     "note": "Beginning of month 5th month",
@@ -935,7 +935,7 @@
     "aviv": "",
     "event": "New month"
   },
-  "2025-07-28": {
+  "2025-07-29": {
     "bore": "2 5th month 6025",
     "yehudim": "2 Av 5785",
     "note": "",
@@ -943,7 +943,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-29": {
+  "2025-07-30": {
     "bore": "3 5th month 6025",
     "yehudim": "3 Av 5785",
     "note": "",
@@ -951,7 +951,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-30": {
+  "2025-07-31": {
     "bore": "4 5th month 6025",
     "yehudim": "4 Av 5785",
     "note": "",
@@ -959,7 +959,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-07-31": {
+  "2025-08-01": {
     "bore": "5 5th month 6025",
     "yehudim": "5 Av 5785",
     "note": "",
@@ -967,7 +967,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-01": {
+  "2025-08-02": {
     "bore": "6 5th month 6025",
     "yehudim": "6 Av 5785",
     "note": "",
@@ -975,7 +975,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-02": {
+  "2025-08-03": {
     "bore": "7 5th month 6025",
     "yehudim": "7 Av 5785",
     "note": "",
@@ -983,7 +983,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-03": {
+  "2025-08-04": {
     "bore": "8 5th month 6025",
     "yehudim": "8 Av 5785",
     "note": "",
@@ -991,7 +991,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-04": {
+  "2025-08-05": {
     "bore": "9 5th month 6025",
     "yehudim": "9 Av 5785",
     "note": "",
@@ -999,7 +999,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-05": {
+  "2025-08-06": {
     "bore": "10 5th month 6025",
     "yehudim": "10 Av 5785",
     "note": "",
@@ -1007,7 +1007,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-06": {
+  "2025-08-07": {
     "bore": "11 5th month 6025",
     "yehudim": "11 Av 5785",
     "note": "",
@@ -1015,7 +1015,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-07": {
+  "2025-08-08": {
     "bore": "12 5th month 6025",
     "yehudim": "12 Av 5785",
     "note": "",
@@ -1023,7 +1023,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-08": {
+  "2025-08-09": {
     "bore": "13 5th month 6025",
     "yehudim": "13 Av 5785",
     "note": "",
@@ -1031,7 +1031,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-09": {
+  "2025-08-10": {
     "bore": "14 5th month 6025",
     "yehudim": "14 Av 5785",
     "note": "",
@@ -1039,7 +1039,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-10": {
+  "2025-08-11": {
     "bore": "15 5th month 6025",
     "yehudim": "15 Av 5785",
     "note": "",
@@ -1047,7 +1047,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-11": {
+  "2025-08-12": {
     "bore": "16 5th month 6025",
     "yehudim": "16 Av 5785",
     "note": "",
@@ -1055,7 +1055,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-12": {
+  "2025-08-13": {
     "bore": "17 5th month 6025",
     "yehudim": "17 Av 5785",
     "note": "",
@@ -1063,7 +1063,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-13": {
+  "2025-08-14": {
     "bore": "18 5th month 6025",
     "yehudim": "18 Av 5785",
     "note": "",
@@ -1071,7 +1071,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-14": {
+  "2025-08-15": {
     "bore": "19 5th month 6025",
     "yehudim": "19 Av 5785",
     "note": "",
@@ -1079,7 +1079,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-15": {
+  "2025-08-16": {
     "bore": "20 5th month 6025",
     "yehudim": "20 Av 5785",
     "note": "",
@@ -1087,7 +1087,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-16": {
+  "2025-08-17": {
     "bore": "21 5th month 6025",
     "yehudim": "21 Av 5785",
     "note": "",
@@ -1095,7 +1095,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-17": {
+  "2025-08-18": {
     "bore": "22 5th month 6025",
     "yehudim": "22 Av 5785",
     "note": "",
@@ -1103,7 +1103,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-18": {
+  "2025-08-19": {
     "bore": "23 5th month 6025",
     "yehudim": "23 Av 5785",
     "note": "",
@@ -1111,7 +1111,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-19": {
+  "2025-08-20": {
     "bore": "24 5th month 6025",
     "yehudim": "24 Av 5785",
     "note": "",
@@ -1119,7 +1119,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-20": {
+  "2025-08-21": {
     "bore": "25 5th month 6025",
     "yehudim": "25 Av 5785",
     "note": "",
@@ -1127,7 +1127,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-21": {
+  "2025-08-22": {
     "bore": "26 5th month 6025",
     "yehudim": "26 Av 5785",
     "note": "",
@@ -1135,7 +1135,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-22": {
+  "2025-08-23": {
     "bore": "27 5th month 6025",
     "yehudim": "27 Av 5785",
     "note": "",
@@ -1143,7 +1143,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-23": {
+  "2025-08-24": {
     "bore": "28 5th month 6025",
     "yehudim": "28 Av 5785",
     "note": "",
@@ -1151,7 +1151,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-24": {
+  "2025-08-25": {
     "bore": "1 6th month 6025",
     "yehudim": "1 Elul 5785",
     "note": "Beginning of month 6th month",
@@ -1159,7 +1159,7 @@
     "aviv": "",
     "event": "New month"
   },
-  "2025-08-25": {
+  "2025-08-26": {
     "bore": "2 6th month 6025",
     "yehudim": "2 Elul 5785",
     "note": "",
@@ -1167,7 +1167,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-26": {
+  "2025-08-27": {
     "bore": "3 6th month 6025",
     "yehudim": "3 Elul 5785",
     "note": "",
@@ -1175,7 +1175,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-27": {
+  "2025-08-28": {
     "bore": "4 6th month 6025",
     "yehudim": "4 Elul 5785",
     "note": "",
@@ -1183,7 +1183,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-28": {
+  "2025-08-29": {
     "bore": "5 6th month 6025",
     "yehudim": "5 Elul 5785",
     "note": "",
@@ -1191,7 +1191,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-29": {
+  "2025-08-30": {
     "bore": "6 6th month 6025",
     "yehudim": "6 Elul 5785",
     "note": "",
@@ -1199,7 +1199,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-30": {
+  "2025-08-31": {
     "bore": "7 6th month 6025",
     "yehudim": "7 Elul 5785",
     "note": "",
@@ -1207,7 +1207,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-08-31": {
+  "2025-09-01": {
     "bore": "8 6th month 6025",
     "yehudim": "8 Elul 5785",
     "note": "",
@@ -1215,7 +1215,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-01": {
+  "2025-09-02": {
     "bore": "9 6th month 6025",
     "yehudim": "9 Elul 5785",
     "note": "",
@@ -1223,7 +1223,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-02": {
+  "2025-09-03": {
     "bore": "10 6th month 6025",
     "yehudim": "10 Elul 5785",
     "note": "",
@@ -1231,7 +1231,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-03": {
+  "2025-09-04": {
     "bore": "11 6th month 6025",
     "yehudim": "11 Elul 5785",
     "note": "",
@@ -1239,7 +1239,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-04": {
+  "2025-09-05": {
     "bore": "12 6th month 6025",
     "yehudim": "12 Elul 5785",
     "note": "",
@@ -1247,7 +1247,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-05": {
+  "2025-09-06": {
     "bore": "13 6th month 6025",
     "yehudim": "13 Elul 5785",
     "note": "",
@@ -1255,7 +1255,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-06": {
+  "2025-09-07": {
     "bore": "14 6th month 6025",
     "yehudim": "14 Elul 5785",
     "note": "",
@@ -1263,7 +1263,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-07": {
+  "2025-09-08": {
     "bore": "15 6th month 6025",
     "yehudim": "15 Elul 5785",
     "note": "",
@@ -1271,7 +1271,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-08": {
+  "2025-09-09": {
     "bore": "16 6th month 6025",
     "yehudim": "16 Elul 5785",
     "note": "",
@@ -1279,7 +1279,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-09": {
+  "2025-09-10": {
     "bore": "17 6th month 6025",
     "yehudim": "17 Elul 5785",
     "note": "",
@@ -1287,7 +1287,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-10": {
+  "2025-09-11": {
     "bore": "18 6th month 6025",
     "yehudim": "18 Elul 5785",
     "note": "",
@@ -1295,7 +1295,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-11": {
+  "2025-09-12": {
     "bore": "19 6th month 6025",
     "yehudim": "19 Elul 5785",
     "note": "",
@@ -1303,7 +1303,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-12": {
+  "2025-09-13": {
     "bore": "20 6th month 6025",
     "yehudim": "20 Elul 5785",
     "note": "",
@@ -1311,7 +1311,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-13": {
+  "2025-09-14": {
     "bore": "21 6th month 6025",
     "yehudim": "21 Elul 5785",
     "note": "",
@@ -1319,7 +1319,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-14": {
+  "2025-09-15": {
     "bore": "22 6th month 6025",
     "yehudim": "22 Elul 5785",
     "note": "",
@@ -1327,7 +1327,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-15": {
+  "2025-09-16": {
     "bore": "23 6th month 6025",
     "yehudim": "23 Elul 5785",
     "note": "",
@@ -1335,7 +1335,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-16": {
+  "2025-09-17": {
     "bore": "24 6th month 6025",
     "yehudim": "24 Elul 5785",
     "note": "",
@@ -1343,7 +1343,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-17": {
+  "2025-09-18": {
     "bore": "25 6th month 6025",
     "yehudim": "25 Elul 5785",
     "note": "",
@@ -1351,7 +1351,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-18": {
+  "2025-09-19": {
     "bore": "26 6th month 6025",
     "yehudim": "26 Elul 5785",
     "note": "",
@@ -1359,7 +1359,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-19": {
+  "2025-09-20": {
     "bore": "27 6th month 6025",
     "yehudim": "27 Elul 5785",
     "note": "",
@@ -1367,7 +1367,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-20": {
+  "2025-09-21": {
     "bore": "28 6th month 6025",
     "yehudim": "28 Elul 5785",
     "note": "",
@@ -1375,7 +1375,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-21": {
+  "2025-09-22": {
     "bore": "29 6th month 6025",
     "yehudim": "29 Elul 5785",
     "note": "",
@@ -1383,7 +1383,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-22": {
+  "2025-09-23": {
     "bore": "30 6th month 6025",
     "yehudim": "30 Elul 5785",
     "note": "",
@@ -1391,7 +1391,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-24": {
+  "2025-09-25": {
     "bore": "1 Etanim 6025",
     "yehudim": "1 Tishrei 5785",
     "note": "Yom Terua (Rosh Hashana)",
@@ -1399,7 +1399,7 @@
     "aviv": "",
     "event": "Yom Terua"
   },
-  "2025-09-25": {
+  "2025-09-26": {
     "bore": "2 Etanim 6025",
     "yehudim": "2 Tishrei 5785",
     "note": "",
@@ -1407,7 +1407,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-26": {
+  "2025-09-27": {
     "bore": "3 Etanim 6025",
     "yehudim": "3 Tishrei 5785",
     "note": "",
@@ -1415,7 +1415,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-27": {
+  "2025-09-28": {
     "bore": "4 Etanim 6025",
     "yehudim": "4 Tishrei 5785",
     "note": "",
@@ -1423,7 +1423,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-28": {
+  "2025-09-29": {
     "bore": "5 Etanim 6025",
     "yehudim": "5 Tishrei 5785",
     "note": "",
@@ -1431,7 +1431,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-29": {
+  "2025-09-30": {
     "bore": "6 Etanim 6025",
     "yehudim": "6 Tishrei 5785",
     "note": "",
@@ -1439,7 +1439,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-09-30": {
+  "2025-10-01": {
     "bore": "7 Etanim 6025",
     "yehudim": "7 Tishrei 5785",
     "note": "",
@@ -1447,7 +1447,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-01": {
+  "2025-10-02": {
     "bore": "8 Etanim 6025",
     "yehudim": "8 Tishrei 5785",
     "note": "",
@@ -1455,7 +1455,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-02": {
+  "2025-10-03": {
     "bore": "9 Etanim 6025",
     "yehudim": "9 Tishrei 5785",
     "note": "",
@@ -1463,7 +1463,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-03": {
+  "2025-10-04": {
     "bore": "10 Etanim 6025",
     "yehudim": "10 Tishrei 5785",
     "note": "Yom Ha'Kipurim (Day of Atonement)",
@@ -1471,7 +1471,7 @@
     "aviv": "",
     "event": "Yom Ha'Kipurim"
   },
-  "2025-10-04": {
+  "2025-10-05": {
     "bore": "11 Etanim 6025",
     "yehudim": "11 Tishrei 5785",
     "note": "",
@@ -1479,7 +1479,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-05": {
+  "2025-10-06": {
     "bore": "12 Etanim 6025",
     "yehudim": "12 Tishrei 5785",
     "note": "",
@@ -1487,7 +1487,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-06": {
+  "2025-10-07": {
     "bore": "13 Etanim 6025",
     "yehudim": "13 Tishrei 5785",
     "note": "",
@@ -1495,7 +1495,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-07": {
+  "2025-10-08": {
     "bore": "14 Etanim 6025",
     "yehudim": "14 Tishrei 5785",
     "note": "",
@@ -1503,7 +1503,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-08": {
+  "2025-10-09": {
     "bore": "15 Etanim 6025",
     "yehudim": "15 Tishrei 5785",
     "note": "Sucot begins",
@@ -1511,7 +1511,7 @@
     "aviv": "",
     "event": "Sucot"
   },
-  "2025-10-09": {
+  "2025-10-10": {
     "bore": "16 Etanim 6025",
     "yehudim": "16 Tishrei 5785",
     "note": "",
@@ -1519,7 +1519,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-10": {
+  "2025-10-11": {
     "bore": "17 Etanim 6025",
     "yehudim": "17 Tishrei 5785",
     "note": "",
@@ -1527,7 +1527,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-11": {
+  "2025-10-12": {
     "bore": "18 Etanim 6025",
     "yehudim": "18 Tishrei 5785",
     "note": "",
@@ -1535,7 +1535,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-12": {
+  "2025-10-13": {
     "bore": "19 Etanim 6025",
     "yehudim": "19 Tishrei 5785",
     "note": "",
@@ -1543,7 +1543,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-13": {
+  "2025-10-14": {
     "bore": "20 Etanim 6025",
     "yehudim": "20 Tishrei 5785",
     "note": "",
@@ -1551,7 +1551,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-14": {
+  "2025-10-15": {
     "bore": "21 Etanim 6025",
     "yehudim": "21 Tishrei 5785",
     "note": "",
@@ -1559,7 +1559,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-15": {
+  "2025-10-16": {
     "bore": "22 Etanim 6025",
     "yehudim": "22 Tishrei 5785",
     "note": "",
@@ -1567,7 +1567,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-16": {
+  "2025-10-17": {
     "bore": "23 Etanim 6025",
     "yehudim": "23 Tishrei 5785",
     "note": "",
@@ -1575,7 +1575,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-17": {
+  "2025-10-18": {
     "bore": "24 Etanim 6025",
     "yehudim": "24 Tishrei 5785",
     "note": "",
@@ -1583,7 +1583,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-18": {
+  "2025-10-19": {
     "bore": "25 Etanim 6025",
     "yehudim": "25 Tishrei 5785",
     "note": "",
@@ -1591,7 +1591,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-19": {
+  "2025-10-20": {
     "bore": "26 Etanim 6025",
     "yehudim": "26 Tishrei 5785",
     "note": "",
@@ -1599,7 +1599,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-20": {
+  "2025-10-21": {
     "bore": "27 Etanim 6025",
     "yehudim": "27 Tishrei 5785",
     "note": "",
@@ -1607,7 +1607,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-21": {
+  "2025-10-22": {
     "bore": "28 Etanim 6025",
     "yehudim": "28 Tishrei 5785",
     "note": "",
@@ -1615,7 +1615,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-22": {
+  "2025-10-23": {
     "bore": "29 Etanim 6025",
     "yehudim": "29 Tishrei 5785",
     "note": "",
@@ -1623,7 +1623,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-24": {
+  "2025-10-25": {
     "bore": "1 Bul 6025",
     "yehudim": "1 Cheshvan 5785",
     "note": "Beginning of month Bul",
@@ -1631,7 +1631,7 @@
     "aviv": "",
     "event": "New month"
   },
-  "2025-10-25": {
+  "2025-10-26": {
     "bore": "2 Bul 6025",
     "yehudim": "2 Cheshvan 5785",
     "note": "",
@@ -1639,7 +1639,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-26": {
+  "2025-10-27": {
     "bore": "3 Bul 6025",
     "yehudim": "3 Cheshvan 5785",
     "note": "",
@@ -1647,7 +1647,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-27": {
+  "2025-10-28": {
     "bore": "4 Bul 6025",
     "yehudim": "4 Cheshvan 5785",
     "note": "",
@@ -1655,7 +1655,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-28": {
+  "2025-10-29": {
     "bore": "5 Bul 6025",
     "yehudim": "5 Cheshvan 5785",
     "note": "",
@@ -1663,7 +1663,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-29": {
+  "2025-10-30": {
     "bore": "6 Bul 6025",
     "yehudim": "6 Cheshvan 5785",
     "note": "",
@@ -1671,7 +1671,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-30": {
+  "2025-10-31": {
     "bore": "7 Bul 6025",
     "yehudim": "7 Cheshvan 5785",
     "note": "",
@@ -1679,7 +1679,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-10-31": {
+  "2025-11-01": {
     "bore": "8 Bul 6025",
     "yehudim": "8 Cheshvan 5785",
     "note": "",
@@ -1687,7 +1687,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-01": {
+  "2025-11-02": {
     "bore": "9 Bul 6025",
     "yehudim": "9 Cheshvan 5785",
     "note": "",
@@ -1695,7 +1695,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-02": {
+  "2025-11-03": {
     "bore": "10 Bul 6025",
     "yehudim": "10 Cheshvan 5785",
     "note": "",
@@ -1703,7 +1703,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-03": {
+  "2025-11-04": {
     "bore": "11 Bul 6025",
     "yehudim": "11 Cheshvan 5785",
     "note": "",
@@ -1711,7 +1711,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-04": {
+  "2025-11-05": {
     "bore": "12 Bul 6025",
     "yehudim": "12 Cheshvan 5785",
     "note": "",
@@ -1719,7 +1719,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-05": {
+  "2025-11-06": {
     "bore": "13 Bul 6025",
     "yehudim": "13 Cheshvan 5785",
     "note": "",
@@ -1727,7 +1727,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-06": {
+  "2025-11-07": {
     "bore": "14 Bul 6025",
     "yehudim": "14 Cheshvan 5785",
     "note": "",
@@ -1735,7 +1735,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-07": {
+  "2025-11-08": {
     "bore": "15 Bul 6025",
     "yehudim": "15 Cheshvan 5785",
     "note": "",
@@ -1743,7 +1743,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-08": {
+  "2025-11-09": {
     "bore": "16 Bul 6025",
     "yehudim": "16 Cheshvan 5785",
     "note": "",
@@ -1751,7 +1751,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-09": {
+  "2025-11-10": {
     "bore": "17 Bul 6025",
     "yehudim": "17 Cheshvan 5785",
     "note": "",
@@ -1759,7 +1759,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-10": {
+  "2025-11-11": {
     "bore": "18 Bul 6025",
     "yehudim": "18 Cheshvan 5785",
     "note": "",
@@ -1767,7 +1767,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-11": {
+  "2025-11-12": {
     "bore": "19 Bul 6025",
     "yehudim": "19 Cheshvan 5785",
     "note": "",
@@ -1775,7 +1775,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-12": {
+  "2025-11-13": {
     "bore": "20 Bul 6025",
     "yehudim": "20 Cheshvan 5785",
     "note": "",
@@ -1783,7 +1783,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-13": {
+  "2025-11-14": {
     "bore": "21 Bul 6025",
     "yehudim": "21 Cheshvan 5785",
     "note": "",
@@ -1791,7 +1791,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-14": {
+  "2025-11-15": {
     "bore": "22 Bul 6025",
     "yehudim": "22 Cheshvan 5785",
     "note": "",
@@ -1799,7 +1799,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-15": {
+  "2025-11-16": {
     "bore": "23 Bul 6025",
     "yehudim": "23 Cheshvan 5785",
     "note": "",
@@ -1807,7 +1807,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-16": {
+  "2025-11-17": {
     "bore": "24 Bul 6025",
     "yehudim": "24 Cheshvan 5785",
     "note": "",
@@ -1815,7 +1815,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-17": {
+  "2025-11-18": {
     "bore": "25 Bul 6025",
     "yehudim": "25 Cheshvan 5785",
     "note": "",
@@ -1823,7 +1823,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-18": {
+  "2025-11-19": {
     "bore": "26 Bul 6025",
     "yehudim": "26 Cheshvan 5785",
     "note": "",
@@ -1831,7 +1831,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-19": {
+  "2025-11-20": {
     "bore": "27 Bul 6025",
     "yehudim": "27 Cheshvan 5785",
     "note": "",
@@ -1839,7 +1839,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-20": {
+  "2025-11-21": {
     "bore": "28 Bul 6025",
     "yehudim": "28 Cheshvan 5785",
     "note": "",
@@ -1847,7 +1847,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-21": {
+  "2025-11-22": {
     "bore": "1 9th month 6025",
     "yehudim": "1 Kislev 5785",
     "note": "Beginning of month 9th month",
@@ -1855,7 +1855,7 @@
     "aviv": "",
     "event": "New month"
   },
-  "2025-11-22": {
+  "2025-11-23": {
     "bore": "2 9th month 6025",
     "yehudim": "2 Kislev 5785",
     "note": "",
@@ -1863,7 +1863,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-23": {
+  "2025-11-24": {
     "bore": "3 9th month 6025",
     "yehudim": "3 Kislev 5785",
     "note": "",
@@ -1871,7 +1871,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-24": {
+  "2025-11-25": {
     "bore": "4 9th month 6025",
     "yehudim": "4 Kislev 5785",
     "note": "",
@@ -1879,7 +1879,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-25": {
+  "2025-11-26": {
     "bore": "5 9th month 6025",
     "yehudim": "5 Kislev 5785",
     "note": "",
@@ -1887,7 +1887,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-26": {
+  "2025-11-27": {
     "bore": "6 9th month 6025",
     "yehudim": "6 Kislev 5785",
     "note": "",
@@ -1895,7 +1895,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-27": {
+  "2025-11-28": {
     "bore": "7 9th month 6025",
     "yehudim": "7 Kislev 5785",
     "note": "",
@@ -1903,7 +1903,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-28": {
+  "2025-11-29": {
     "bore": "8 9th month 6025",
     "yehudim": "8 Kislev 5785",
     "note": "",
@@ -1911,7 +1911,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-29": {
+  "2025-11-30": {
     "bore": "9 9th month 6025",
     "yehudim": "9 Kislev 5785",
     "note": "",
@@ -1919,7 +1919,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-11-30": {
+  "2025-12-01": {
     "bore": "10 9th month 6025",
     "yehudim": "10 Kislev 5785",
     "note": "",
@@ -1927,7 +1927,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-01": {
+  "2025-12-02": {
     "bore": "11 9th month 6025",
     "yehudim": "11 Kislev 5785",
     "note": "",
@@ -1935,7 +1935,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-02": {
+  "2025-12-03": {
     "bore": "12 9th month 6025",
     "yehudim": "12 Kislev 5785",
     "note": "",
@@ -1943,7 +1943,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-03": {
+  "2025-12-04": {
     "bore": "13 9th month 6025",
     "yehudim": "13 Kislev 5785",
     "note": "",
@@ -1951,7 +1951,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-04": {
+  "2025-12-05": {
     "bore": "14 9th month 6025",
     "yehudim": "14 Kislev 5785",
     "note": "",
@@ -1959,7 +1959,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-05": {
+  "2025-12-06": {
     "bore": "15 9th month 6025",
     "yehudim": "15 Kislev 5785",
     "note": "",
@@ -1967,7 +1967,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-06": {
+  "2025-12-07": {
     "bore": "16 9th month 6025",
     "yehudim": "16 Kislev 5785",
     "note": "",
@@ -1975,7 +1975,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-07": {
+  "2025-12-08": {
     "bore": "17 9th month 6025",
     "yehudim": "17 Kislev 5785",
     "note": "",
@@ -1983,7 +1983,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-08": {
+  "2025-12-09": {
     "bore": "18 9th month 6025",
     "yehudim": "18 Kislev 5785",
     "note": "",
@@ -1991,7 +1991,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-09": {
+  "2025-12-10": {
     "bore": "19 9th month 6025",
     "yehudim": "19 Kislev 5785",
     "note": "",
@@ -1999,7 +1999,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-10": {
+  "2025-12-11": {
     "bore": "20 9th month 6025",
     "yehudim": "20 Kislev 5785",
     "note": "",
@@ -2007,7 +2007,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-11": {
+  "2025-12-12": {
     "bore": "21 9th month 6025",
     "yehudim": "21 Kislev 5785",
     "note": "",
@@ -2015,7 +2015,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-12": {
+  "2025-12-13": {
     "bore": "22 9th month 6025",
     "yehudim": "22 Kislev 5785",
     "note": "",
@@ -2023,7 +2023,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-13": {
+  "2025-12-14": {
     "bore": "23 9th month 6025",
     "yehudim": "23 Kislev 5785",
     "note": "",
@@ -2031,7 +2031,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-14": {
+  "2025-12-15": {
     "bore": "24 9th month 6025",
     "yehudim": "24 Kislev 5785",
     "note": "",
@@ -2039,7 +2039,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-15": {
+  "2025-12-16": {
     "bore": "25 9th month 6025",
     "yehudim": "25 Kislev 5785",
     "note": "",
@@ -2047,7 +2047,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-16": {
+  "2025-12-17": {
     "bore": "26 9th month 6025",
     "yehudim": "26 Kislev 5785",
     "note": "",
@@ -2055,7 +2055,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-17": {
+  "2025-12-18": {
     "bore": "27 9th month 6025",
     "yehudim": "27 Kislev 5785",
     "note": "",
@@ -2063,7 +2063,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-18": {
+  "2025-12-19": {
     "bore": "28 9th month 6025",
     "yehudim": "28 Kislev 5785",
     "note": "",
@@ -2071,7 +2071,7 @@
     "aviv": "",
     "event": ""
   },
-  "2025-12-19": {
+  "2025-12-20": {
     "bore": "29 9th month 6025",
     "yehudim": "29 Kislev 5785",
     "note": "",

@@ -6,11 +6,12 @@ Create a mobile widget to display biblical dates on your device, with all days o
 - [When Is The New Moon](https://whenisthenewmoon.com)
 - [El Cuerpo del Mesías](https://elcuerpodelmesias.com)
 - [Michael Rood](https://www.michaelrood.com)
+- [NASA Daily Moon Guide](https://moon.nasa.gov/moon-observation/daily-moon-guide/?intent=021#1763721791380::0::) ← super handy to eyeball real-time moon visibility straight from the source
 
 ## generate the calendar in your machine
 *clone this repo into your machine or even faster --> just copy paste `scriptable.js` into your scriptable iOS app (I always try to keep this up-to-date since I use it myself*
 
-1. **Update dates** in `json_maker.py` based on current new moon sightings from [whenisthenewmoon.com](https://whenisthenewmoon.com)
+1. **Update dates** in `json_maker.py` using whatever combo of [whenisthenewmoon.com](https://whenisthenewmoon.com) + the [NASA moon guide](https://moon.nasa.gov/moon-observation/daily-moon-guide/?intent=021#1763721791380::0::) gives you the clearest call on the latest crescent sighting
 2. **Run**: `python json_maker.py`
 3. **Output**: Creates `6025.json` with biblical calendar data
 
