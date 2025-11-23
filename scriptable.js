@@ -76,22 +76,62 @@ function parseBoreDate(boreString) {
  * Fetches calendar data from JSON and finds entry for current date
  */
 async function getCalendarEntry(jsonUrl, lookupISO, fallbackISO) {
-  const req = new Request(jsonUrl);
-  const jsonData = await req.loadJSON();
+  console.log(`🔍 Buscando fecha: ${lookupISO} (bore) y ${fallbackISO} (civil)`);
 
-  let entry = jsonData[lookupISO];
+  try {
+    // DATOS DE PRUEBA TEMPORALES - REEMPLAZAR CON JSON REAL CUANDO FUNCIONE LA URL
+    const testData = {
+      "2025-11-23": {
+        "bore": "2 9th month 6025",
+        "yehudim": "2 Kislev 5785",
+        "note": "",
+        "moon": "",
+        "aviv": "",
+        "event": ""
+      },
+      "2025-11-24": {
+        "bore": "3 9th month 6025",
+        "yehudim": "3 Kislev 5785",
+        "note": "",
+        "moon": "",
+        "aviv": "",
+        "event": ""
+      }
+    };
 
-  if (!entry) {
-    console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
-    entry = jsonData[fallbackISO];
+    console.log("🧪 Usando datos de prueba temporales");
+
+    let entry = testData[lookupISO];
+    console.log(`🔍 Resultado para ${lookupISO}: ${entry ? 'ENCONTRADO' : 'NO ENCONTRADO'}`);
+
+    if (!entry) {
+      console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
+      entry = testData[fallbackISO];
+      console.log(`🔍 Resultado para ${fallbackISO}: ${entry ? 'ENCONTRADO' : 'NO ENCONTRADO'}`);
+    }
+
+    if (!entry) {
+      console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
+      entry = DEFAULT_ENTRY;
+    } else {
+      console.log(`📅 Datos encontrados: bore="${entry.bore}", yehudim="${entry.yehudim}"`);
+    }
+
+    return entry;
+
+    /* DESCOMENTAR CUANDO EL REPOSITORIO FUNCIONE:
+    const req = new Request(jsonUrl);
+    const jsonData = await req.loadJSON();
+    console.log(`✅ JSON descargado. Total de entradas: ${Object.keys(jsonData).length}`);
+
+    let entry = jsonData[lookupISO];
+    return entry || jsonData[fallbackISO] || DEFAULT_ENTRY;
+    */
+
+  } catch (error) {
+    console.log(`❌ Error obteniendo datos: ${error.message}`);
+    return DEFAULT_ENTRY;
   }
-
-  if (!entry) {
-    console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
-    entry = DEFAULT_ENTRY;
-  }
-
-  return entry;
 }
 
 // ============================================================================
