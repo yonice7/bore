@@ -73,84 +73,25 @@ function parseBoreDate(boreString) {
 }
 
 /**
- * Gets cached calendar data, downloading if necessary
- */
-async function getCachedCalendarData(jsonUrl) {
-  const fm = FileManager.local();
-  const cacheFile = "calendar_cache.json";
-  const cachePath = fm.joinPath(fm.documentsDirectory(), cacheFile);
-
-  try {
-    // Check if cache exists and is recent (less than 24 hours old)
-    if (fm.fileExists(cachePath)) {
-      const cacheDate = fm.modificationDate(cachePath);
-      const now = new Date();
-      const hoursSinceCache = (now - cacheDate) / (1000 * 60 * 60);
-
-      if (hoursSinceCache < 24) {
-        console.log("📋 Usando datos del cache local");
-        const cacheContent = fm.readString(cachePath);
-        return JSON.parse(cacheContent);
-      }
-    }
-
-    // Download fresh data
-    console.log("📡 Descargando datos frescos...");
-    const req = new Request(jsonUrl);
-    req.timeoutInterval = 15; // 15 second timeout for initial download
-
-    const jsonData = await req.loadJSON();
-
-    // Save to cache
-    fm.writeString(cachePath, JSON.stringify(jsonData));
-    console.log("💾 Datos guardados en cache local");
-
-    return jsonData;
-
-  } catch (error) {
-    console.log(`❌ Error con el cache: ${error.message}`);
-
-    // Try to use existing cache as fallback
-    if (fm.fileExists(cachePath)) {
-      console.log("🔄 Usando cache existente como respaldo");
-      try {
-        const cacheContent = fm.readString(cachePath);
-        return JSON.parse(cacheContent);
-      } catch (cacheError) {
-        console.log(`❌ Error leyendo cache: ${cacheError.message}`);
-      }
-    }
-
-    throw error; // Re-throw if no cache available
-  }
-}
-
-/**
- * Fetches calendar data from cache/JSON and finds entry for current date
+ * Fetches calendar data from JSON and finds entry for current date
  */
 async function getCalendarEntry(jsonUrl, lookupISO, fallbackISO) {
-  try {
-    const jsonData = await getCachedCalendarData(jsonUrl);
+  const req = new Request(jsonUrl);
+  const jsonData = await req.loadJSON();
 
-    let entry = jsonData[lookupISO];
+  let entry = jsonData[lookupISO];
 
-    if (!entry) {
-      console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
-      entry = jsonData[fallbackISO];
-    }
-
-    if (!entry) {
-      console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
-      entry = DEFAULT_ENTRY;
-    }
-
-    return entry;
-
-  } catch (error) {
-    console.log(`❌ Error obteniendo datos del calendario: ${error.message}`);
-    console.log("🔄 Usando datos por defecto");
-    return DEFAULT_ENTRY;
+  if (!entry) {
+    console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
+    entry = jsonData[fallbackISO];
   }
+
+  if (!entry) {
+    console.log("❌ No hay entrada ni para bore ni para civil. Usando valores por defecto.");
+    entry = DEFAULT_ENTRY;
+  }
+
+  return entry;
 }
 
 // ============================================================================
