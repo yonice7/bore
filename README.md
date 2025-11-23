@@ -36,7 +36,7 @@ Update `jsonUrl` in the script to point to your JSON file location.
 Widget shows biblical date, Gregorian date, and special events.
 
 ## key events
-*always try as much as possible to observe them according to the Torah*
+*always try observing them according to the Torah*
 
 ### Spring Festivals (Aviv)
 - **Aviv 1**: Rosh Hashanah (Biblical New Year)
@@ -48,7 +48,7 @@ Widget shows biblical date, Gregorian date, and special events.
 - **Aviv +50**: Shavuot (Pentecost/Weeks)
 
 ### Fall Festivals (Etanim)
-- **Etanim 1**: Yom Terua (Feast of Trumpets)
+- **Etanim 1**: Yom Teruah (Feast of Trumpets)
 - **Etanim 10**: Yom Ha'Kipurim (Day of Atonement)
 - **Etanim 15**: Sukkot (Tabernacles) begins
 - **Etanim 21**: Last Day of Tabernacles

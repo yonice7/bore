@@ -108,7 +108,7 @@ class FixedEventProvider:
                 21: CalendarEvent("Bikurim and Omer", "Bikurim (Firstfruits) and first day of the Omer", EventType.SEASONAL, 10),
             },
             "Etanim": {
-                1: CalendarEvent("Yom Terua", "Yom Terua (Rosh Hashana)", EventType.FESTIVAL, 10),
+                1: CalendarEvent("Yom Teruah", "Yom Teruah (Rosh Hashana)", EventType.FESTIVAL, 10),
                 10: CalendarEvent("Yom Ha'Kipurim", "Yom Ha'Kipurim (Day of Atonement)", EventType.FESTIVAL, 10),
                 15: CalendarEvent("Sucot", "Sucot begins", EventType.FESTIVAL, 10),
             }
