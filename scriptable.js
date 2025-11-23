@@ -2,7 +2,7 @@
 // CONFIGURATION
 // ============================================================================
 const CONFIG = {
-  jsonUrl: "https://raw.githubusercontent.com/yonice7/bore/main/6025.json",
+  jsonUrl: "https://raw.githubusercontent.com/edyhvh/bore/main/6025.json",
   sunsetHour: 18,
   colors: {
     background: "#fefefe",
