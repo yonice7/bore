@@ -42,7 +42,7 @@ Widget shows biblical date, Gregorian date, and special events.
 - **Aviv 1**: Rosh Hashanah (Biblical New Year)
 - **Aviv 10**: Day of Preparation
 - **Aviv 14**: Pesach (Passover) - Evening begins
-- **Aviv 15**: Hag Ha'Matzot (Unleavened Bread) begins
+- **Aviv 15**: Jag Ha'Matzot (Unleavened Bread) begins
 - **Aviv 16**: Bikurim (Firstfruits) & Omer count begins
 - **Aviv 21**: Last Day of Unleavened Bread
 - **Aviv +50**: Shavuot (Pentecost/Weeks)
@@ -55,15 +55,14 @@ Widget shows biblical date, Gregorian date, and special events.
 - **Etanim 22**: Shemini Atzeret (Eighth Day)
 
 ### New Moon Days
-- **1st of every month**: New Moon (Rosh Chodesh) - Work prohibited
-- **30th of every month**: Last day of month
+- **1st of every month**: New Moon (Rosh Jodesh) - Work prohibited
 
 ### Omer Count
 - **Daily from Aviv 16 to Aviv +49**: Count of Omer (49 days)
 - **Aviv +50**: Shavuot (completion of 50 days)
 
 ### Special Days
-- **Weekly**: Shabbat (Sabbath) - From Friday sunset to Saturday sunset
+- **Weekly**: Shabat (Sabbath) - From Friday sunset to Saturday sunset
 
 ## Disclaimer
 Based on visual new moon sightings.
