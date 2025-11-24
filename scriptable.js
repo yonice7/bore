@@ -4,6 +4,7 @@
 const CONFIG = {
   jsonUrl: "https://raw.githubusercontent.com/edyhvh/bore/main/6025.json",
   sunsetHour: 18,
+  showBoreYear: true, // Cambia a false para ocultar el año sugerido
   colors: {
     background: "#fefefe",
     accentRed: "#d9534f",
@@ -176,8 +177,9 @@ function buildWidget(entry, civilDate) {
     color: CONFIG.colors.black
   });
   
-  // Month and year
-  addStyledText(widget, `${boreDate.month} ${boreDate.year}`, {
+  // Month and year (conditionally show year based on config)
+  const monthYearText = CONFIG.showBoreYear ? `${boreDate.month} ${boreDate.year}` : boreDate.month;
+  addStyledText(widget, monthYearText, {
     font: CONFIG.fonts.monthYear,
     color: CONFIG.colors.gray
   });

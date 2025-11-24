@@ -206,6 +206,15 @@ class CalendarGenerator:
                 return aviv_start + timedelta(days=20)
         return None
 
+    def find_yom_teruah_date(self, months_config: List[MonthConfig]) -> Optional[date]:
+        """Find the Yom Teruah date (Etanim 1 - Jewish New Year)."""
+        for month_cfg in months_config:
+            if month_cfg["name"] == "Etanim":
+                etanim_start = self.calculate_month_start(month_cfg)
+                # Yom Teruah is day 1 of Etanim
+                return etanim_start
+        return None
+
     def generate_calendar(self, months_config: List[MonthConfig]) -> Dict[str, CalendarEntry]:
         """
         Generate the complete calendar.
@@ -225,6 +234,9 @@ class CalendarGenerator:
                 if isinstance(provider, OmerEventProvider):
                     provider.set_omer_start(omer_start)
 
+        # Find Yom Teruah date for dynamic Yehudim year calculation
+        yom_teruah_date = self.find_yom_teruah_date(months_config)
+
         # Generate entries for each month
         for month_cfg in months_config:
             month_start = self.calculate_month_start(month_cfg)
@@ -234,19 +246,24 @@ class CalendarGenerator:
                 bore_day = day_offset + 1
                 iso_date = current_date.isoformat()
 
-                entry = self._build_calendar_entry(current_date, month_cfg, bore_day)
+                entry = self._build_calendar_entry(current_date, month_cfg, bore_day, yom_teruah_date)
                 calendar[iso_date] = entry
 
         logger.info(f"Generated calendar with {len(calendar)} entries")
         return calendar
 
-    def _build_calendar_entry(self, gregorian_date: date, month_cfg: MonthConfig, bore_day: int) -> CalendarEntry:
+    def _build_calendar_entry(self, gregorian_date: date, month_cfg: MonthConfig, bore_day: int, yom_teruah_date: Optional[date] = None) -> CalendarEntry:
         """Build a single calendar entry following original logic."""
         iso_date = gregorian_date.isoformat()
 
+        # Calculate dynamic Yehudim year based on Yom Teruah
+        yehudim_year = self.config.yehudim_year
+        if yom_teruah_date and gregorian_date >= yom_teruah_date:
+            yehudim_year += 1
+
         # Format date strings
         bore = f"{bore_day} {month_cfg['name']} {self.config.bore_year}"
-        yehudim = f"{bore_day} {month_cfg['yehudim_month_name']} {self.config.yehudim_year}"
+        yehudim = f"{bore_day} {month_cfg['yehudim_month_name']} {yehudim_year}"
 
         # Initialize
         note = ""
