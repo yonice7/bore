@@ -80,34 +80,16 @@ async function getCalendarEntry(jsonUrl, lookupISO, fallbackISO) {
   console.log(`🔍 Buscando fecha: ${lookupISO} (bore) y ${fallbackISO} (civil)`);
 
   try {
-    // DATOS DE PRUEBA TEMPORALES - REEMPLAZAR CON JSON REAL CUANDO FUNCIONE LA URL
-    const testData = {
-      "2025-11-23": {
-        "bore": "2 9th month 6025",
-        "yehudim": "2 Kislev 5785",
-        "note": "",
-        "moon": "",
-        "aviv": "",
-        "event": ""
-      },
-      "2025-11-24": {
-        "bore": "3 9th month 6025",
-        "yehudim": "3 Kislev 5785",
-        "note": "",
-        "moon": "",
-        "aviv": "",
-        "event": ""
-      }
-    };
+    const req = new Request(jsonUrl);
+    const jsonData = await req.loadJSON();
+    console.log(`✅ JSON descargado. Total de entradas: ${Object.keys(jsonData).length}`);
 
-    console.log("🧪 Usando datos de prueba temporales");
-
-    let entry = testData[lookupISO];
+    let entry = jsonData[lookupISO];
     console.log(`🔍 Resultado para ${lookupISO}: ${entry ? 'ENCONTRADO' : 'NO ENCONTRADO'}`);
 
     if (!entry) {
       console.log("⚠️ No encontré entrada para el día bore. Probando con la fecha civil…");
-      entry = testData[fallbackISO];
+      entry = jsonData[fallbackISO];
       console.log(`🔍 Resultado para ${fallbackISO}: ${entry ? 'ENCONTRADO' : 'NO ENCONTRADO'}`);
     }
 
@@ -119,15 +101,6 @@ async function getCalendarEntry(jsonUrl, lookupISO, fallbackISO) {
     }
 
     return entry;
-
-    /* DESCOMENTAR CUANDO EL REPOSITORIO FUNCIONE:
-    const req = new Request(jsonUrl);
-    const jsonData = await req.loadJSON();
-    console.log(`✅ JSON descargado. Total de entradas: ${Object.keys(jsonData).length}`);
-
-    let entry = jsonData[lookupISO];
-    return entry || jsonData[fallbackISO] || DEFAULT_ENTRY;
-    */
 
   } catch (error) {
     console.log(`❌ Error obteniendo datos: ${error.message}`);
