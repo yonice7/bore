@@ -1,68 +1,72 @@
-# the bore calendar
+# The Bore Calendar
 
 Create a mobile widget to display biblical dates on your device, with all days of the year including festivals, new moons, and special events, inspired by the works of Michael Rood, Adam Drissel, Deborah Gordon, and Mark Harris.
 
-## data
+## Data Sources
 - [When Is The New Moon](https://whenisthenewmoon.com)
 - [El Cuerpo del Mesías](https://elcuerpodelmesias.com)
 - [Michael Rood](https://www.michaelrood.com)
 - [NASA Daily Moon Guide](https://moon.nasa.gov/moon-observation/daily-moon-guide/?intent=021#1763721791380::0::) ← super handy to eyeball real-time moon visibility straight from the source
 
-## generate the calendar in your machine
-*clone this repo into your machine or even faster --> just copy paste `scriptable.js` into your scriptable iOS app (I always try to keep this up-to-date since I use it myself*
+## Generate Calendar Locally
+*Clone this repo or copy `scriptable.js` into Scriptable app (kept up-to-date)*
 
-1. **Update dates** in `json_maker.py` using whatever combo of [whenisthenewmoon.com](https://whenisthenewmoon.com) + the [NASA moon guide](https://moon.nasa.gov/moon-observation/daily-moon-guide/?intent=021#1763721791380::0::) gives you the clearest call on the latest crescent sighting
+1. **Update dates** in `json_maker.py` using [whenisthenewmoon.com](https://whenisthenewmoon.com) + [NASA moon guide](https://moon.nasa.gov/moon-observation/daily-moon-guide/?intent=021#1763721791380::0::)
 2. **Run**: `python json_maker.py`
 3. **Output**: Creates `6025.json` with biblical calendar data
 
-## iphone setup
+## Setup
 
-### 1. Install Scriptable
-Download **Scriptable** from the App Store.
+### iPhone Setup
 
-### 2. Add Script
-- Open Scriptable → Tap **+** → Create new script
-- Copy `scriptable.js` content → Paste into script
-- Name it the way you want, I just go by "bore"
+1. **Install Scriptable**: Download **Scriptable** from the App Store
+2. **Add Script**: Open Scriptable → Tap **+** → Create new script → Copy `scriptable.js` content → Paste into script → Name it "bore"
+3. **Configure**: Update `jsonUrl` in script to point to your JSON file location
+4. **Add Widget**: Long-press home screen → Edit → Add widget → **Scriptable** → Select script → Choose Medium size → Add Widget
+5. **Done!**: Widget shows biblical date, Gregorian date, and special events
 
-### 3. Configure
-Update `jsonUrl` in the script to point to your JSON file location.
+### Android Setup
+- WIP
 
-### 4. Add Widget
-- Long-press home screen → Edit → Add widget → **Scriptable**
-- Select your script → Choose Medium size → **Add Widget**
+### Terminal Setup
 
-### 5. Done!
-Widget shows biblical date, Gregorian date, and special events.
+1. **Clone repo**: `git clone <repository-url> && cd bore`
+2. **Make executable**: `chmod +x bore`
+3. **Run command**: `./bore` to see today's date
+4. **Add alias** (optional): Run this command to add `bore-today` alias to your `.zshrc`:
 
-## key events
-*always try observing them according to the Torah*
+   ```bash
+   echo -e "\n# bore\nalias bore-today='$(pwd)/bore'" >> ~/.zshrc && source ~/.zshrc
+   ```
 
-### Spring Festivals (Aviv)
-- **Aviv 1**: Rosh Hashanah (Biblical New Year)
-- **Aviv 10**: Day of Preparation
-- **Aviv 14**: Pesach (Passover) - Evening begins
-- **Aviv 15**: Jag Ha'Matzot (Unleavened Bread) begins
-- **Aviv 16**: Bikurim (Firstfruits) & Omer count begins
-- **Aviv 21**: Last Day of Unleavened Bread
-- **Aviv +50**: Shavuot (Pentecost/Weeks)
+5. **Use alias**: Now you can run `bore-today` from any directory to see today's date
 
-### Fall Festivals (Etanim)
-- **Etanim 1**: Yom Teruah (Feast of Trumpets)
-- **Etanim 10**: Yom Ha'Kipurim (Day of Atonement)
-- **Etanim 15**: Sukkot (Tabernacles) begins
-- **Etanim 21**: Last Day of Tabernacles
-- **Etanim 22**: Shemini Atzeret (Eighth Day)
+## Key Events
+*Always observe according to the Torah*
 
-### New Moon Days
-- **1st of every month**: New Moon (Rosh Jodesh) - Work prohibited
-
-### Omer Count
-- **Daily from Aviv 16 to Aviv +49**: Count of Omer (49 days)
-- **Aviv +50**: Shavuot (completion of 50 days)
-
-### Special Days
-- **Weekly**: Shabat (Sabbath) - From Friday sunset to Saturday sunset
+| Event | Date | Description |
+|-------|------|-------------|
+| **Spring Festivals (Aviv)** | | |
+| Rosh Hashanah | Aviv 1 | Biblical New Year |
+| Day of Preparation | Aviv 10 | Preparation for Passover |
+| Pesach (Passover) | Aviv 14 | Evening begins |
+| Hag Ha'Matzot | Aviv 15 | Unleavened Bread begins |
+| Bikurim & Omer | Aviv 16 | Firstfruits & Omer count begins |
+| Last Day Unleavened Bread | Aviv 21 | End of Unleavened Bread |
+| Shavuot | Aviv +50 | Pentecost/Weeks |
+| **Fall Festivals (Etanim)** | | |
+| Yom Teruah | Etanim 1 | Feast of Trumpets |
+| Yom Ha'Kipurim | Etanim 10 | Day of Atonement |
+| Sukkot | Etanim 15 | Tabernacles begins |
+| Last Day Tabernacles | Etanim 21 | End of Tabernacles |
+| Shemini Atzeret | Etanim 22 | Eighth Day |
+| **New Moon Days** | | |
+| New Moon (Rosh Hodesh) | 1st of every month | Work prohibited |
+| **Omer Count** | | |
+| Count of Omer | Daily Aviv 16 to Aviv +49 | 49 days |
+| Shavuot | Aviv +50 | Completion of 50 days |
+| **Special Days** | | |
+| Shabbat (Sabbath) | Weekly | Friday sunset to Saturday sunset |
 
 ## Disclaimer
 Based on visual new moon sightings.
