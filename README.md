@@ -39,14 +39,6 @@ Create a mobile widget to display biblical dates on your device, with all days o
    echo -e "\n# bore\nalias bore-today='$(pwd)/bore'" >> ~/.zshrc && source ~/.zshrc
    ```
 
-   **If you already have the alias but it points to the directory instead of the script**, fix it manually:
-   ```bash
-   # Edit your ~/.zshrc file and change:
-   # alias bore-today='/path/to/bore'  (wrong - points to directory)
-   # To:
-   # alias bore-today='/path/to/bore/bore'  (correct - points to script)
-   ```
-
 5. **Use alias**: Now you can run `bore-today` from any directory to see today's date
 
 ## Key Events
