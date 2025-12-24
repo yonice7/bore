@@ -351,6 +351,7 @@ class ConfigManager:
             {"name": "Etanim", "gregorian_month": 9, "gregorian_day": 24, "duration_days": 29, "bore_month_num": 7, "yehudim_month_name": "Tishrei"},
             {"name": "Bul", "gregorian_month": 10, "gregorian_day": 24, "duration_days": 29, "bore_month_num": 8, "yehudim_month_name": "Cheshvan"},
             {"name": "9th month", "gregorian_month": 11, "gregorian_day": 21, "duration_days": 29, "bore_month_num": 9, "yehudim_month_name": "Kislev"},
+            {"name": "10th month", "gregorian_month": 12, "gregorian_day": 21, "duration_days": 29, "bore_month_num": 10, "yehudim_month_name": "Tevet"}
         ]
 
 
